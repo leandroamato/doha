@@ -1,0 +1,162 @@
+main {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: $space-2 0;
+  width: 100%;
+  max-width: calc(100vw - #{$space-2});
+  flex: 1 0 auto;
+
+  // General content blocks
+  p,
+  ul,
+  ol,
+  blockquote,
+  pre,
+  embed,
+  iframe,
+  object,
+  table,
+  dl,
+  address {
+    @extend .wrap;
+    @extend .text-width;
+    margin-top: 0;
+    margin-bottom: $space;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @extend .wrap;
+    @extend .text-width;
+  }
+
+  figure {
+    @extend .wrap;
+    margin-bottom: $space;
+  }
+
+  ol,
+  ul {
+    li {
+      margin-bottom: 0.5rem;
+
+      &::marker {
+        color: $color-theme;
+      }
+
+      ul,
+      ol {
+        margin: 0;
+      }
+    }
+  }
+
+  blockquote {
+    border: 1px $color-theme solid;
+    color: desaturate($color-theme, 60%);
+    padding: $space;
+
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+      th,
+      td {
+        padding: 0.5rem;
+        box-shadow: 0 -1px 0 fade-out($color-theme, 0.6) inset;
+      }
+
+      th {
+        position: sticky;
+        top: 0;
+        text-align: left;
+
+        background: $color-background;
+      }
+
+      &:nth-child(odd) {
+        td {
+          background: fade-out($color-theme, 0.95);
+        }
+      }
+    }
+  }
+
+  pre,
+  code,
+  kbd,
+  tt,
+  var {
+    font-size: 0.9rem;
+    font-family: $font-code;
+    color: lighten($color-theme, 35%);
+    background: darken($color-theme, 25%);
+    padding: 0.25em 0.4em;
+    border-radius: 0.25rem;
+
+    code {
+      background: none;
+      padding: 0;
+    }
+  }
+
+  pre {
+    @extend .wrap;
+    overflow-x: auto;
+    padding: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  hr {
+    position: relative;
+    padding: 0;
+    margin: $space-2 auto;
+    border: none;
+    border: fade-out($color-theme, 0.75) solid;
+    border-width: 1px 0;
+    background: transparent;
+    color: $color-theme;
+    font-size: 0.9rem;
+    line-height: 1;
+    height: 2px;
+    max-width: ($wrap/2);
+
+    &.is-style-wide {
+      max-width: 100%;
+    }
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: -1px;
+      content: "\00A7";
+      background: $color-background;
+      padding: 0.25rem;
+    }
+  }
+
+  .caption {
+    font-size: 0.75rem;
+    line-height: 1;
+    text-transform: uppercase;
+    color: lighten($color-text, 50%);
+  }
+}

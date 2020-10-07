@@ -1,0 +1,57 @@
+#sidebar {
+  background: desaturate(lighten($color-theme, 40%), 50%);
+  padding: $space-2 $space;
+  flex-shrink: 0;
+
+  .wrap {
+    display: grid;
+    gap: $space-2;
+
+    &.cols2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &.cols,
+    &.cols3 {
+      grid-template-columns: repeat(3, 1fr);
+
+      @include mq($until: tablet) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @include mq($until: mobile) {
+      grid-template-columns: 1fr !important;
+    }
+
+    .widget {
+      box-sizing: border-box;
+      font-size: 0.9rem;
+
+      h4 {
+        font-size: 1rem;
+        margin-top: 0;
+        text-transform: uppercase;
+      }
+
+      ul,
+      ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          margin: 0 0 0.5rem 0;
+
+          ul {
+            margin: 0 0 0 0.5rem;
+          }
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+// Wrap
+.wrap {
+  box-sizing: border-box;
+  max-width: $wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Text elements are narrower to make them clearer in a one-column desktop screen
+.text-width {
+  max-width: $text-width;
+}

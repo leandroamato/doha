@@ -1,0 +1,43 @@
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: $color-text;
+  font-family: $font-family;
+  font-size: 1rem;
+  line-height: $line-height;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea,
+select {
+  transition: $transition-default;
+  border: 1px solid fade-out($color-text, 0.9);
+  border-radius: 3px;
+  padding: 0.5rem;
+  outline: none;
+
+  &:focus {
+    border-color: fade-out($color-theme, 0.5);
+    box-shadow: 0 0 0 0.25rem fade-out($color-theme, 0.9);
+  }
+}
+
+textarea {
+  width: 100%;
+}

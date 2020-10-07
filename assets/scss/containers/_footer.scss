@@ -1,0 +1,93 @@
+#footer {
+  background: $color-theme $gradient;
+  color: fade-out($color-theme-contrast, 0.4);
+  padding: $space-2 $space;
+  flex-shrink: 0;
+
+  .wrap {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+
+    a {
+      color: $color-theme-contrast;
+    }
+
+    #social-menu {
+      flex: 0 0 100%;
+      margin: 0 0 1rem 0;
+      padding: 0;
+
+      .menu-items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+
+        li {
+          display: flex;
+          align-items: center;
+
+          a {
+            text-decoration: none;
+            font-weight: 500;
+          }
+
+          @include mq($from: tablet) {
+            &:not(:last-child) {
+              &::after {
+                display: inline-block;
+                transform: scale(0.5);
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f111";
+                margin: 0 0.5rem;
+                opacity: 0.6;
+              }
+            }
+          }
+        }
+        @include mq($until: tablet) {
+          display: block;
+          text-align: center;
+
+          li {
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+
+      a {
+        color: inherit;
+      }
+
+      @include mq($until: mobile) {
+        flex: 0 0 100%;
+      }
+
+      @include mq($from: mobile) {
+        &.powered {
+          &::before {
+            display: inline-block;
+            transform: scale(0.5);
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f111";
+            margin: 0 0.5rem;
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}

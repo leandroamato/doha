@@ -1,0 +1,19 @@
+#container {
+  // A grid with a min-height to fill the viewport and to allow the footer to stick to the bottom, even if the content is short
+  transition: $transition-default;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  @include mq($until: mobile) {
+    // Move down on mobile if search form is open
+    .search-form-open & {
+      transform: translateY($space * 3);
+    }
+
+    // Keep original position if main menu is open
+    .primary-menu-open & {
+      transform: none;
+    }
+  }
+}

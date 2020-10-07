@@ -1,0 +1,16 @@
+{
+  "site": { "URL": "wordpress.localhost" },
+  "optimization": {
+    "nano": {
+      "preset": "advanced",
+      "discardComments": {
+        "removeAll": true
+      },
+      "autoprefixer": {
+        "browsers": ["last 4 versions"],
+        "add": true
+      }
+    },
+    "terser": {}
+  }
+}

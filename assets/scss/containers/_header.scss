@@ -1,0 +1,162 @@
+#header {
+  transition: $transition-default;
+  position: relative;
+  background: $color-theme $gradient;
+  padding: $space;
+  flex: 0;
+
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+
+    // Site Logo
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1;
+      margin: 0 auto 0 0;
+
+      a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+
+        img {
+          transition: $transition-default;
+          height: 3rem;
+          width: auto;
+          border: none;
+
+          @include mq($until: mobile) {
+            max-height: 2rem;
+          }
+        }
+      }
+    }
+
+    .toggle {
+      margin: 0 -1rem;
+      width: $space;
+      background: transparent;
+      border-radius: 100%;
+
+      &::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f002";
+      }
+
+      &.active {
+        background: fade-out($color-theme-contrast, 0.75);
+
+        &::after {
+          content: "\f00d";
+        }
+      }
+
+      &.toggle-menu {
+        &::after {
+          content: "\f0c9";
+        }
+
+        // If the body knows that the primary menu is open, use the button as a background layer to close the menu
+        .primary-menu-open & {
+          opacity: 1 !important;
+
+          &::before {
+            position: fixed;
+            transition: opacity 0.3s ease;
+            transform: scale(50);
+            background: fade-out(#000, 0.5);
+            opacity: 1;
+            margin: 0;
+            z-index: ($z-index - 1);
+          }
+        }
+      }
+    }
+
+    // Search Form
+    // search-form.scss
+
+    @include mq($from: mobile) {
+      .toggle-search {
+        display: none;
+      }
+    }
+
+    // Primary Menu
+    // primary-menu.scss
+
+    @include mq($from: tablet) {
+      .toggle-menu {
+        display: none;
+      }
+    }
+
+    @include mq($until: tablet) {
+      flex-wrap: nowrap;
+
+      h1,
+      #search-form {
+        max-width: 50vw;
+      }
+    }
+
+    @include mq($until: mobile) {
+      justify-content: space-between;
+
+      .toggle-menu {
+        order: 1;
+      }
+
+      h1 {
+        order: 2;
+        margin: 0;
+      }
+
+      .toggle-search {
+        order: 3;
+      }
+    }
+  }
+
+  // Show when scrolling up on mobile
+  @include mq($until: mobile) {
+    position: sticky;
+    top: 0;
+
+    &.nav-up,
+    &.nav-down {
+      padding: 1rem $space;
+      z-index: ($z-index - 2);
+
+      .wrap {
+        h1 {
+          img {
+            max-height: $space;
+          }
+        }
+      }
+
+      // If the search form is visible
+      .search-form-open & {
+        transform: none !important;
+
+        #search-form {
+          transform: none !important;
+        }
+      }
+    }
+
+    &.nav-up {
+      transform: translateY(-100%);
+    }
+
+    &.nav-down {
+      box-shadow: $box-shadow;
+    }
+  }
+}

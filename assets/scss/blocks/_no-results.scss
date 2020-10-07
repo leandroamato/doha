@@ -1,0 +1,31 @@
+// Overwrite main position
+.search-no-results,
+.error404 {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// No results container
+.no-results {
+  text-align: center;
+  color: fade-out($color-text, 0.4);
+
+  h1 {
+    font-weight: 300;
+  }
+
+  .page-content {
+    margin: $space auto $space-2 auto;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  footer {
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

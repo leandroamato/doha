@@ -1,0 +1,202 @@
+#primary-menu {
+  ul {
+    list-style: none;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+  }
+
+  // Traditional version for bigger screens
+  @include mq($from: tablet) {
+    flex: 0 0 100%;
+    margin: $space 0 0 0;
+    padding: $space 0 0 0;
+    border-top: 1px fade-out($color-theme-contrast, 0.8) solid;
+
+    .menu-items {
+      display: flex;
+      align-items: center;
+      margin: (-$space) -1rem;
+
+      li {
+        transition: $transition-default;
+        position: relative;
+
+        a {
+          display: block;
+          text-decoration: none;
+          font-weight: 500;
+          padding: 1rem;
+          color: lighten($color-theme, 40%);
+        }
+
+        &.current_page_item {
+          > a {
+            color: $color-theme-contrast;
+            box-shadow: 0 -1px 0 0 $color-theme-contrast;
+          }
+        }
+
+        &.menu-item-has-children {
+          @include mq($from: tablet) {
+            > a {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              &::after {
+                transform: scale(0.6);
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f078";
+                padding: 0 0 0 0.5rem;
+                opacity: 0.6;
+              }
+            }
+
+            ul {
+              transition: $transition-default;
+              transform-origin: top left;
+              position: absolute;
+              top: 3rem;
+              left: -1px;
+              display: block;
+              min-width: 100%;
+              height: 0;
+              z-index: 666;
+              border-radius: 0 0 $border-radius $border-radius;
+              max-width: 90vw;
+              overflow: hidden;
+
+              li {
+                white-space: nowrap;
+                margin: 0;
+                padding: 0;
+
+                a {
+                  font-weight: normal;
+                }
+
+                &.current_page_item {
+                  > a {
+                    box-shadow: none;
+                  }
+                }
+
+                &.menu-item-has-children {
+                  > a {
+                    &::after {
+                      content: "\f054";
+                    }
+                  }
+
+                  ul {
+                    height: 0;
+                    opacity: 0;
+                    left: 100%;
+                    top: 0;
+                    //border-width: 1px 1px 1px 0;
+                  }
+
+                  &:hover {
+                    background: darken($color-theme, 20%);
+
+                    ul {
+                      height: auto;
+                      opacity: 1;
+                      background: inherit;
+                    }
+                  }
+                }
+              }
+            }
+
+            &:hover {
+              background: darken($color-theme, 10%);
+
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+              }
+
+              ul {
+                height: auto;
+                opacity: 1;
+                background: inherit;
+                overflow: initial;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Drawer version for smaller screens
+  @include mq($until: tablet) {
+    transition: $transition-default;
+    transform: translateX(-100%);
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    max-height: 100vh;
+    width: 90vw;
+    background: $color-background;
+    z-index: -1;
+
+    &.active {
+      transform: none;
+      box-shadow: $box-shadow;
+      visibility: visible;
+      z-index: $z-index;
+      overflow-x: auto;
+    }
+
+    .menu-items {
+      > li {
+        border-bottom: 1px fade-out($color-theme, 0.9) solid;
+
+        &:last-child {
+          border: none;
+        }
+      }
+
+      li {
+        a {
+          display: block;
+          padding: $space;
+          font-weight: 500;
+          text-decoration: none;
+          color: $color-text;
+
+          &:active {
+            color: $color-theme;
+            background: fade-out($color-theme, 0.9);
+          }
+        }
+
+        &.menu-item-has-children {
+          ul {
+            font-size: 0.9em;
+            margin: -0.5rem 0 0.5rem 0;
+
+            li {
+              a {
+                opacity: 0.6;
+                padding: 1rem $space;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

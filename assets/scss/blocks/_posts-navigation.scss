@@ -1,0 +1,13 @@
+.posts-navigation {
+  @extend .wrap;
+  margin-top: $space-2;
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      @extend .btn;
+    }
+  }
+}

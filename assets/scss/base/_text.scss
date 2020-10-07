@@ -1,0 +1,58 @@
+// Icon font
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+
+// Text font
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+// Headings
+// Responsiveness via https://github.com/twbs/rfs
+
+@import "../../node_modules/rfs/scss";
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.bigger {
+  margin-top: 0;
+  font-family: $font-title;
+  font-weight: 900;
+  @include font-size(4rem);
+}
+
+h1,
+.tit1 {
+  margin-top: 0;
+  @include font-size(3.052rem);
+}
+
+h2,
+.tit2 {
+  @include font-size(2.441rem);
+}
+
+h3,
+.tit3 {
+  @include font-size(1.953rem);
+}
+
+h4,
+.tit4 {
+  @include font-size(1.563rem);
+}
+
+h5,
+.tit5 {
+  @include font-size(1.25rem);
+}
+
+small,
+.small {
+  @include font-size(0.8rem);
+}

@@ -1,0 +1,51 @@
+// Colors
+$color-text: fade-out(#000, 0.2) !default;
+$color-background: #fff !default;
+$color-theme: #5f27cd !default;
+$color-theme-contrast: #fff !default;
+$gradient: linear-gradient(
+  45deg,
+  $color-theme,
+  mix($color-theme, adjust-hue($color-theme, 33deg), $weight: 66%)
+) !default;
+
+// Text configuration
+$font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+  Helvetica, sans-serif !default;
+$font-title: "Playfair Display", serif;
+$font-code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace !default;
+$font-size: 16px !default;
+$font-weight: 400 !default;
+$line-height: 1.65 !default;
+$font-ratio: 1.333 !default;
+
+// Shadows
+$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23) !default;
+
+// Easing
+$easing-default: cubic-bezier(0.4, 0, 0.2, 1) !default;
+
+// Transitions
+$transition-default: all 0.3s $easing-default !default;
+
+// General sizes
+$wrap: 1080px !default;
+$text-width: 680px !default;
+$space: ($font-size * 1.5) !default;
+$space-2: ($space * 2) !default;
+$border-radius: 1rem !default;
+
+// Number of columns for the main grid (in mobile, a 1 column grid is used)
+$grid-columns-desktop: 3 !default;
+$grid-columns-tablet: 2 !default;
+
+// Generic z-index
+$z-index: 999 !default;
+
+// Overwrite mq breakpoints
+$mq-breakpoints: (
+  mobile: 420px,
+  tablet: 740px,
+  desktop: $wrap,
+  wide: 1400px,
+);

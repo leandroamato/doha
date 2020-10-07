@@ -1,0 +1,19 @@
+# config
+config.json
+
+# software
+.vscode
+
+# dependencies
+/node_modules
+
+# misc
+.DS_Store
+
+# ignore custom extras but keep folders
+/assets/scss/custom/before/*
+!/assets/scss/custom/before/.gitkeep
+/assets/scss/custom/after/*
+!/assets/scss/custom/after/.gitkeep
+/assets/js/custom/*
+!/assets/js/custom/.gitkeep

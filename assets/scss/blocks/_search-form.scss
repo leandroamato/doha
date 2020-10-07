@@ -1,0 +1,88 @@
+#search-form {
+  form {
+    transition: $transition-default;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background: fade-out(#fff, 0.8);
+    color: $color-theme-contrast;
+    border-radius: $border-radius;
+    padding: 0;
+    overflow: hidden;
+
+    &:focus-within {
+      background: #fff;
+      color: $color-theme;
+    }
+
+    .search-field,
+    .search-submit {
+      box-sizing: border-box;
+      transition: $transition-default;
+      border: none;
+      background: none;
+      outline: none;
+      color: inherit;
+      line-height: 1;
+      padding: 0.5rem 1rem;
+    }
+
+    .search-field {
+      flex: 0 1 auto;
+      min-width: 4rem;
+      box-shadow: none !important;
+
+      &::placeholder {
+        color: fade-out($color-theme-contrast, 0.5);
+      }
+    }
+
+    .search-submit {
+      cursor: pointer;
+      position: relative;
+      opacity: 0.6;
+      flex: 1;
+
+      &::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f002";
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  @include mq($until: tablet) {
+    padding: 0 $space;
+  }
+
+  @include mq($until: mobile) {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    max-width: 100vw !important;
+    height: $space * 3;
+    background: darken($color-theme, 25%);
+
+    form {
+      width: 100%;
+
+      .search-field {
+        flex: 1;
+      }
+
+      .search-submit {
+        flex: 0;
+      }
+    }
+    // On active, the container is translated to show the form
+  }
+}

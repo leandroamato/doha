@@ -1,0 +1,91 @@
+// Links
+a {
+  transition: $transition-default;
+  color: $color-theme;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+// Buttons
+.btn,
+input[type="submit"] {
+  transition: $transition-default;
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  color: $color-theme-contrast;
+  background: $color-theme;
+  border: none;
+  font-weight: 500;
+  line-height: 1;
+  padding: 0.75em 1.25em;
+  border-radius: $border-radius;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  &.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    background: lighten(desaturate($color-theme, 50%), 25%);
+    color: desaturate($color-theme, 50%);
+  }
+
+  &::before {
+    transition: $transition-default;
+    content: "";
+    background: $color-theme-contrast;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: $border-radius;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    transform: translate(1px, 1px);
+    transition: 0s;
+
+    &::before {
+      transform: scale(0);
+      opacity: 0.6;
+      //border-radius: 100%;
+      transition: 0s;
+    }
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  i {
+    margin: 0 calc(var(--space) * 0.5) 0 calc(var(--space) * -0.5);
+  }
+}
+
+.ButtonList {
+  li {
+    margin: 0 0 var(--space) 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

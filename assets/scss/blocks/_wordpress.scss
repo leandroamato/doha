@@ -1,0 +1,134 @@
+// Blocks with text width
+.wp-block-button,
+.wp-block-quote {
+  @extend .wrap;
+  @extend .text-width;
+  margin: 0 auto $space auto !important;
+}
+
+// Embeds
+.twitter-tweet,
+.wp-block-embed {
+  @extend .wrap;
+  margin: 0 auto $space auto !important;
+  // TODO paginación
+
+  &:not(.is-type-video) {
+    @extend .text-width;
+  }
+
+  .wp-block-embed__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+// Wordpress sizes
+.size-auto,
+.size-medium,
+.size-thumbnail {
+  max-width: $wrap;
+  height: auto;
+}
+
+// Wordpress buttons
+.wp-block-button__link {
+  @extend .btn;
+}
+
+// Wordpress align
+.alignleft {
+  float: left;
+  margin-bottom: $space;
+  margin-right: $space;
+}
+
+.alignright {
+  float: right;
+  margin-bottom: $space;
+  margin-left: $space;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-right: auto;
+  margin-bottom: $space;
+  margin-left: auto;
+}
+
+// Media and image blocks
+.wp-block-media-text,
+.wp-block-image {
+  text-align: center;
+  margin-bottom: $space;
+}
+
+// Cover
+.wp-block-cover {
+  @extend .wrap;
+  margin-bottom: $space;
+
+  .wp-block-cover-image-text,
+  .wp-block-cover-text,
+  a {
+    color: #fff;
+  }
+
+  .has-large-font-size {
+    @extend .tit3;
+    line-height: 1.2;
+  }
+
+  @include mq($until: mobile) {
+    &.aligncenter,
+    &.alignwide,
+    &.alignfull {
+      width: 100vw;
+      margin-right: (-$space) !important;
+      margin-left: (-$space) !important;
+    }
+  }
+}
+
+// Gallery
+.wp-block-gallery {
+  @extend .wrap;
+  margin-bottom: $space;
+
+  ul {
+    max-width: 100%;
+
+    li {
+      overflow: hidden;
+    }
+  }
+}
+
+// Captions
+.wp-caption-text,
+figcaption {
+  @extend .wrap;
+  @extend .caption;
+  margin: 0;
+}
+
+// Page links
+.page-links {
+  @extend .wrap;
+  @extend .text-width;
+  text-align: center;
+  margin-top: $space-2;
+  padding-top: 1rem;
+  border-top: 1px fade-out($color-theme, 0.75) solid;
+
+  .post-page-numbers {
+    @extend .btn;
+
+    &.current {
+      pointer-events: none;
+      background: fade-out($color-theme, 0.75) !important;
+    }
+  }
+}
