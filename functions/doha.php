@@ -105,7 +105,9 @@ if (!function_exists('doha_get_menu')) {
     if (has_nav_menu($menu)) {
 
       // Add button to toggle menu for main menu
-      if ($menu == 'primary') echo '<button class="toggle toggle-menu btn" data-target="primary-menu" aria-controls="primary-menu" aria-expanded="false"><span class="screen-reader-text">' . _x('Menu', 'label') . '</span></button>';
+      if ($menu == 'primary') {
+        echo '<button class="toggle toggle-menu btn" data-target="primary-menu" aria-controls="primary-menu" aria-expanded="false"><span class="screen-reader-text">' . _x('Menu', 'label') . '</span></button>';
+      }
 
       // Show the menu
       wp_nav_menu(
