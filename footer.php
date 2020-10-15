@@ -10,7 +10,7 @@
 
     <p class="copyright">&copy; <?php echo date('Y') . ' ' . get_bloginfo('name'); ?></p>
 
-    <p class="powered"><?php _e('Powered by', 'doha'); ?> <a href="https://wordpress.org/">WordPress</a> &amp; <a href="#">Doha Theme</a></p>
+    <p class="powered"><?php _e('Powered by', 'doha'); ?> <a href="https://wordpress.org/">WordPress</a> &amp; <a href="https://github.com/leandroamato/doha">Doha Theme</a></p>
 
   </div>
 </footer>
