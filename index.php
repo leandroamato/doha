@@ -3,6 +3,9 @@ get_header();
 
 if (have_posts()) :
 
+  // Section title
+  doha_get_section_title();
+
   // The loop
   $contentClass = (is_singular()) ? 'singular' : 'grid';
   echo '<div class="content ' . $contentClass . '">';

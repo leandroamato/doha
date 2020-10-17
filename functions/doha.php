@@ -61,6 +61,7 @@ if (!function_exists('doha_body_class')) {
 /**
  * Get custom logo
  */
+
 if (!function_exists('doha_get_custom_logo')) {
 
   function doha_get_custom_logo()
@@ -78,6 +79,7 @@ if (!function_exists('doha_get_custom_logo')) {
 /**
  * Show logo or site name
  */
+
 if (!function_exists('doha_get_logo')) {
 
   function doha_get_logo()
@@ -98,6 +100,7 @@ if (!function_exists('doha_get_logo')) {
 /**
  * Get menus
  */
+
 if (!function_exists('doha_get_menu')) {
 
   function doha_get_menu($menu = 'primary')
@@ -144,6 +147,36 @@ if (!function_exists('doha_get_search_form')) {
   }
 
   add_filter('get_search_form', 'wp_search_form');
+}
+
+/**
+ * Get section title
+ */
+
+if (!function_exists('doha_get_section_title')) {
+  function doha_get_section_title()
+  {
+    if (!is_singular() && !is_home()) {
+
+      echo '<h1 class="section-title">';
+
+      // Add section type
+      if (is_category()) {
+        echo __('Category: ', 'doha');
+      } else if (is_tag()) {
+        echo __('Tag: ', 'doha');
+      } else if (is_date()) {
+        echo __('Date: ', 'doha');
+      } else if (is_author()) {
+        echo __('Author: ', 'doha');
+      }
+
+      // Show section title
+      echo rtrim(wp_title('', false), '- ');
+
+      echo '</h1>';
+    }
+  }
 }
 
 /**
@@ -203,7 +236,6 @@ if (!function_exists('doha_post_author')) {
 /**
  * Get post date
  */
-
 
 if (!function_exists('doha_post_date')) {
 
