@@ -13,6 +13,12 @@ Esta base considera, a grandes rasgos, estos items:
 * Adaptación responsive, contemplando ya las funciones para mostrar/ocultar el menú y el buscador
 * Tareas de Gulp organizadas para facilitar el desarrollo y la optimización de los assets
 
+## Enlaces
+
+* Repositiorio y descarga: https://github.com/leandroamato/doha
+* Demo: https://doha.localv.ar/
+* Contacto: https://leandro.ama.to/#contacto
+
 ## Requerimientos de desarrollo
 
 - Una instalación de [Wordpress](https://wordpress.org/) activa

@@ -9,6 +9,7 @@ config.json
 
 # misc
 .DS_Store
+deploy.sh
 
 # ignore custom extras but keep folders
 /assets/scss/custom/before/*
