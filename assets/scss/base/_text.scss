@@ -30,6 +30,11 @@ h1,
 .tit1 {
   margin-top: 0;
   @include font-size(3.052rem);
+
+  &.section-title {
+    margin: 0 auto $space auto;
+    max-width: $wrap;
+  }
 }
 
 h2,

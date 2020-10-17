@@ -118,7 +118,13 @@
 
     label {
       font-size: 0.9rem;
-      font-weight: bold;
+      font-weight: 500;
+    }
+
+    .comment-form-cookies-consent {
+      label {
+        font-weight: normal;
+      }
     }
 
     input[type="text"],
