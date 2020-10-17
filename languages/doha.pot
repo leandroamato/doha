@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Doha\n"
-"POT-Creation-Date: 2020-09-09 18:53-0300\n"
+"POT-Creation-Date: 2020-10-17 20:14-0300\n"
 "PO-Revision-Date: 2020-08-31 19:50-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,11 +17,11 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 
-#: comments.php:17 functions/doha.php:255
+#: comments.php:17 functions/doha.php:287
 msgid "comment"
 msgstr ""
 
-#: comments.php:17 functions/doha.php:255
+#: comments.php:17 functions/doha.php:287
 msgid "comments"
 msgstr ""
 
@@ -33,19 +33,39 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: functions/doha.php:136 functions/doha.php:138
+#: footer.php:13
+msgid "Powered by"
+msgstr ""
+
+#: functions/doha.php:142 functions/doha.php:144
 msgid "Search"
 msgstr ""
 
-#: functions/doha.php:137
+#: functions/doha.php:143
 msgid "Search&hellip;"
 msgstr ""
 
-#: functions/doha.php:191
+#: functions/doha.php:163
+msgid "Category: "
+msgstr ""
+
+#: functions/doha.php:165
+msgid "Tag: "
+msgstr ""
+
+#: functions/doha.php:167
+msgid "Date: "
+msgstr ""
+
+#: functions/doha.php:169
+msgid "Author: "
+msgstr ""
+
+#: functions/doha.php:225
 msgid "By"
 msgstr ""
 
-#: functions/doha.php:209
+#: functions/doha.php:241
 #, php-format
 msgid "%s ago"
 msgstr ""
@@ -58,7 +78,15 @@ msgstr ""
 msgid "Social"
 msgstr ""
 
-#: header.php:17
+#: functions/setup.php:92
+msgid "Widgets"
+msgstr ""
+
+#: functions/setup.php:94
+msgid "Add widgets here."
+msgstr ""
+
+#: header.php:23
 msgid "Skip to content"
 msgstr ""
 
@@ -70,24 +98,24 @@ msgstr ""
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
-#: template-parts/content-none.php:12
+#: template-parts/content-none.php:14
 msgid "Sorry, it seems the page you were trying to access has been moved or deleted from this website."
 msgstr ""
 
-#: template-parts/content-none.php:21
+#: template-parts/content-none.php:22
 msgid "Go back home"
 msgstr ""
 
-#: template-parts/content-page.php:16 template-parts/content.php:68
+#: template-parts/content-page.php:17 template-parts/content.php:60
 msgid "Pages"
 msgstr ""
 
-#: template-parts/content-page.php:30
+#: template-parts/content-page.php:31
 #, php-format
 msgid "Edit<span class=\"screen-reader-text\"> %s</span>"
 msgstr ""
 
-#: template-parts/content.php:55
+#: template-parts/content.php:47
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""

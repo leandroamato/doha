@@ -56,13 +56,46 @@ main {
   }
 
   blockquote {
-    border: 1px $color-theme solid;
-    color: desaturate($color-theme, 60%);
-    padding: $space;
+    max-width: ($wrap/2) !important;
+    color: darken($color-theme, 20%);
+    padding: $space !important;
+    border: 1px darken($color-theme, 20%) double;
 
     p {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      font-weight: 500;
+
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+
+    cite {
+      @extend .caption;
+      display: block;
+      text-align: right;
+      font-style: normal;
+      color: inherit !important;
+      opacity: 0.6;
+
+      a {
+        color: inherit;
+      }
+    }
+
+    &.is-style-large {
+      padding: $space !important;
+
+      p {
+        font-family: $font-title;
+        font-weight: 600;
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important;
+      }
+
+      cite {
+        font-size: 0.75rem !important;
       }
     }
   }

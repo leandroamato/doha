@@ -41,13 +41,23 @@
 .alignleft {
   float: left;
   margin-bottom: $space;
-  margin-right: $space;
+  margin-right: $space-2;
+
+  @include mq($until: mobile) {
+    float: none;
+    margin: 0 auto $space auto;
+  }
 }
 
 .alignright {
   float: right;
   margin-bottom: $space;
-  margin-left: $space;
+  margin-left: $space-2;
+
+  @include mq($until: mobile) {
+    float: none;
+    margin: 0 auto $space auto;
+  }
 }
 
 .aligncenter {
@@ -63,6 +73,22 @@
 .wp-block-image {
   text-align: center;
   margin-bottom: $space;
+
+  .alignright {
+    @extend .alignright;
+  }
+
+  .alignleft {
+    @extend .alignleft;
+  }
+
+  .aligncenter {
+    @extend .aligncenter;
+
+    figcaption {
+      display: block !important;
+    }
+  }
 }
 
 // Cover
@@ -74,6 +100,23 @@
   .wp-block-cover-text,
   a {
     color: #fff;
+  }
+
+  blockquote {
+    color: #fff;
+    border-color: fade-out(#fff, 0.6);
+
+    cite {
+      color: #fff;
+    }
+  }
+
+  .wp-block-cover__inner-container {
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .has-large-font-size {

@@ -484,6 +484,10 @@ h1,
     h1,
     .tit1 {
       font-size: 3.052rem; } }
+  h1.section-title,
+  .tit1.section-title {
+    margin: 0 auto 28px auto;
+    max-width: 1080px; }
 
 h2,
 .tit2 {
@@ -541,14 +545,14 @@ body {
   min-height: 100vh; }
   @media (max-width: 26.24em) {
     .search-form-open #container {
-      transform: translateY(72px); }
+      transform: translateY(84px); }
     .primary-menu-open #container {
       transform: none; } }
 
 #footer {
   background: #5f27cd linear-gradient(45deg, #5f27cd, #7e27cd);
   color: rgba(255, 255, 255, 0.6);
-  padding: 48px 24px;
+  padding: 56px 28px;
   flex-shrink: 0; }
   #footer .wrap, #footer main p, main #footer p,
   #footer main ul, main #footer ul,
@@ -631,7 +635,7 @@ body {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   background: #5f27cd linear-gradient(45deg, #5f27cd, #7e27cd);
-  padding: 24px;
+  padding: 28px;
   flex: 0; }
   #header .wrap, #header main p, main #header p,
   #header main ul, main #header ul,
@@ -667,15 +671,12 @@ body {
         text-decoration: none; }
         #header .wrap h1 a img, #header main p h1 a img, main #header p h1 a img, #header main ul h1 a img, main #header ul h1 a img, #header main ol h1 a img, main #header ol h1 a img, #header main blockquote h1 a img, main #header blockquote h1 a img, #header main pre h1 a img, main #header pre h1 a img, #header main embed h1 a img, main #header embed h1 a img, #header main iframe h1 a img, main #header iframe h1 a img, #header main object h1 a img, main #header object h1 a img, #header main table h1 a img, main #header table h1 a img, #header main dl h1 a img, main #header dl h1 a img, #header main address h1 a img, main #header address h1 a img, #header main h1 h1 a img, main #header h1 h1 a img, #header main h2 h1 a img, main #header h2 h1 a img, #header main h3 h1 a img, main #header h3 h1 a img, #header main h4 h1 a img, main #header h4 h1 a img, #header main h5 h1 a img, main #header h5 h1 a img, #header main h6 h1 a img, main #header h6 h1 a img, #header main figure h1 a img, main #header figure h1 a img, #header article.full .entry-content h1 a img, article.full #header .entry-content h1 a img, #header article.full .entry-footer h1 a img, article.full #header .entry-footer h1 a img, #header #comments .comments-title h1 a img, #comments #header .comments-title h1 a img, #header .posts-navigation h1 a img, #header .wp-block-button h1 a img, #header .wp-block-quote h1 a img, #header .twitter-tweet h1 a img, #header .wp-block-embed h1 a img, #header .wp-block-cover h1 a img, #header .wp-block-gallery h1 a img, #header .wp-caption-text h1 a img, #header figcaption h1 a img, #header .page-links h1 a img {
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-          height: 3rem;
+          height: 2rem;
           width: auto;
           border: none; }
-          @media (max-width: 26.24em) {
-            #header .wrap h1 a img, #header main p h1 a img, main #header p h1 a img, #header main ul h1 a img, main #header ul h1 a img, #header main ol h1 a img, main #header ol h1 a img, #header main blockquote h1 a img, main #header blockquote h1 a img, #header main pre h1 a img, main #header pre h1 a img, #header main embed h1 a img, main #header embed h1 a img, #header main iframe h1 a img, main #header iframe h1 a img, #header main object h1 a img, main #header object h1 a img, #header main table h1 a img, main #header table h1 a img, #header main dl h1 a img, main #header dl h1 a img, #header main address h1 a img, main #header address h1 a img, #header main h1 h1 a img, main #header h1 h1 a img, #header main h2 h1 a img, main #header h2 h1 a img, #header main h3 h1 a img, main #header h3 h1 a img, #header main h4 h1 a img, main #header h4 h1 a img, #header main h5 h1 a img, main #header h5 h1 a img, #header main h6 h1 a img, main #header h6 h1 a img, #header main figure h1 a img, main #header figure h1 a img, #header article.full .entry-content h1 a img, article.full #header .entry-content h1 a img, #header article.full .entry-footer h1 a img, article.full #header .entry-footer h1 a img, #header #comments .comments-title h1 a img, #comments #header .comments-title h1 a img, #header .posts-navigation h1 a img, #header .wp-block-button h1 a img, #header .wp-block-quote h1 a img, #header .twitter-tweet h1 a img, #header .wp-block-embed h1 a img, #header .wp-block-cover h1 a img, #header .wp-block-gallery h1 a img, #header .wp-caption-text h1 a img, #header figcaption h1 a img, #header .page-links h1 a img {
-              max-height: 2rem; } }
     #header .wrap .toggle, #header main p .toggle, main #header p .toggle, #header main ul .toggle, main #header ul .toggle, #header main ol .toggle, main #header ol .toggle, #header main blockquote .toggle, main #header blockquote .toggle, #header main pre .toggle, main #header pre .toggle, #header main embed .toggle, main #header embed .toggle, #header main iframe .toggle, main #header iframe .toggle, #header main object .toggle, main #header object .toggle, #header main table .toggle, main #header table .toggle, #header main dl .toggle, main #header dl .toggle, #header main address .toggle, main #header address .toggle, #header main h1 .toggle, main #header h1 .toggle, #header main h2 .toggle, main #header h2 .toggle, #header main h3 .toggle, main #header h3 .toggle, #header main h4 .toggle, main #header h4 .toggle, #header main h5 .toggle, main #header h5 .toggle, #header main h6 .toggle, main #header h6 .toggle, #header main figure .toggle, main #header figure .toggle, #header article.full .entry-content .toggle, article.full #header .entry-content .toggle, #header article.full .entry-footer .toggle, article.full #header .entry-footer .toggle, #header #comments .comments-title .toggle, #comments #header .comments-title .toggle, #header .posts-navigation .toggle, #header .wp-block-button .toggle, #header .wp-block-quote .toggle, #header .twitter-tweet .toggle, #header .wp-block-embed .toggle, #header .wp-block-cover .toggle, #header .wp-block-gallery .toggle, #header .wp-caption-text .toggle, #header figcaption .toggle, #header .page-links .toggle {
       margin: 0 -1rem;
-      width: 24px;
+      width: 28px;
       background: transparent;
       border-radius: 100%; }
       #header .wrap .toggle::after, #header main p .toggle::after, main #header p .toggle::after, #header main ul .toggle::after, main #header ul .toggle::after, #header main ol .toggle::after, main #header ol .toggle::after, #header main blockquote .toggle::after, main #header blockquote .toggle::after, #header main pre .toggle::after, main #header pre .toggle::after, #header main embed .toggle::after, main #header embed .toggle::after, #header main iframe .toggle::after, main #header iframe .toggle::after, #header main object .toggle::after, main #header object .toggle::after, #header main table .toggle::after, main #header table .toggle::after, #header main dl .toggle::after, main #header dl .toggle::after, #header main address .toggle::after, main #header address .toggle::after, #header main h1 .toggle::after, main #header h1 .toggle::after, #header main h2 .toggle::after, main #header h2 .toggle::after, #header main h3 .toggle::after, main #header h3 .toggle::after, #header main h4 .toggle::after, main #header h4 .toggle::after, #header main h5 .toggle::after, main #header h5 .toggle::after, #header main h6 .toggle::after, main #header h6 .toggle::after, #header main figure .toggle::after, main #header figure .toggle::after, #header article.full .entry-content .toggle::after, article.full #header .entry-content .toggle::after, #header article.full .entry-footer .toggle::after, article.full #header .entry-footer .toggle::after, #header #comments .comments-title .toggle::after, #comments #header .comments-title .toggle::after, #header .posts-navigation .toggle::after, #header .wp-block-button .toggle::after, #header .wp-block-quote .toggle::after, #header .twitter-tweet .toggle::after, #header .wp-block-embed .toggle::after, #header .wp-block-cover .toggle::after, #header .wp-block-gallery .toggle::after, #header .wp-caption-text .toggle::after, #header figcaption .toggle::after, #header .page-links .toggle::after {
@@ -811,12 +812,13 @@ body {
   @media (max-width: 26.24em) {
     #header {
       position: sticky;
-      top: 0; }
+      top: 0;
+      z-index: 999; }
       #header.nav-up, #header.nav-down {
-        padding: 1rem 24px;
+        padding: 1rem 28px;
         z-index: 997; }
         #header.nav-up .wrap h1 img, #header.nav-up main p h1 img, main #header.nav-up p h1 img, #header.nav-up main ul h1 img, main #header.nav-up ul h1 img, #header.nav-up main ol h1 img, main #header.nav-up ol h1 img, #header.nav-up main blockquote h1 img, main #header.nav-up blockquote h1 img, #header.nav-up main pre h1 img, main #header.nav-up pre h1 img, #header.nav-up main embed h1 img, main #header.nav-up embed h1 img, #header.nav-up main iframe h1 img, main #header.nav-up iframe h1 img, #header.nav-up main object h1 img, main #header.nav-up object h1 img, #header.nav-up main table h1 img, main #header.nav-up table h1 img, #header.nav-up main dl h1 img, main #header.nav-up dl h1 img, #header.nav-up main address h1 img, main #header.nav-up address h1 img, #header.nav-up main h1 h1 img, main #header.nav-up h1 h1 img, #header.nav-up main h2 h1 img, main #header.nav-up h2 h1 img, #header.nav-up main h3 h1 img, main #header.nav-up h3 h1 img, #header.nav-up main h4 h1 img, main #header.nav-up h4 h1 img, #header.nav-up main h5 h1 img, main #header.nav-up h5 h1 img, #header.nav-up main h6 h1 img, main #header.nav-up h6 h1 img, #header.nav-up main figure h1 img, main #header.nav-up figure h1 img, #header.nav-up article.full .entry-content h1 img, article.full #header.nav-up .entry-content h1 img, #header.nav-up article.full .entry-footer h1 img, article.full #header.nav-up .entry-footer h1 img, #header.nav-up #comments .comments-title h1 img, #comments #header.nav-up .comments-title h1 img, #header.nav-up .posts-navigation h1 img, #header.nav-up .wp-block-button h1 img, #header.nav-up .wp-block-quote h1 img, #header.nav-up .twitter-tweet h1 img, #header.nav-up .wp-block-embed h1 img, #header.nav-up .wp-block-cover h1 img, #header.nav-up .wp-block-gallery h1 img, #header.nav-up .wp-caption-text h1 img, #header.nav-up figcaption h1 img, #header.nav-up .page-links h1 img, #header.nav-down .wrap h1 img, #header.nav-down main p h1 img, main #header.nav-down p h1 img, #header.nav-down main ul h1 img, main #header.nav-down ul h1 img, #header.nav-down main ol h1 img, main #header.nav-down ol h1 img, #header.nav-down main blockquote h1 img, main #header.nav-down blockquote h1 img, #header.nav-down main pre h1 img, main #header.nav-down pre h1 img, #header.nav-down main embed h1 img, main #header.nav-down embed h1 img, #header.nav-down main iframe h1 img, main #header.nav-down iframe h1 img, #header.nav-down main object h1 img, main #header.nav-down object h1 img, #header.nav-down main table h1 img, main #header.nav-down table h1 img, #header.nav-down main dl h1 img, main #header.nav-down dl h1 img, #header.nav-down main address h1 img, main #header.nav-down address h1 img, #header.nav-down main h1 h1 img, main #header.nav-down h1 h1 img, #header.nav-down main h2 h1 img, main #header.nav-down h2 h1 img, #header.nav-down main h3 h1 img, main #header.nav-down h3 h1 img, #header.nav-down main h4 h1 img, main #header.nav-down h4 h1 img, #header.nav-down main h5 h1 img, main #header.nav-down h5 h1 img, #header.nav-down main h6 h1 img, main #header.nav-down h6 h1 img, #header.nav-down main figure h1 img, main #header.nav-down figure h1 img, #header.nav-down article.full .entry-content h1 img, article.full #header.nav-down .entry-content h1 img, #header.nav-down article.full .entry-footer h1 img, article.full #header.nav-down .entry-footer h1 img, #header.nav-down #comments .comments-title h1 img, #comments #header.nav-down .comments-title h1 img, #header.nav-down .posts-navigation h1 img, #header.nav-down .wp-block-button h1 img, #header.nav-down .wp-block-quote h1 img, #header.nav-down .twitter-tweet h1 img, #header.nav-down .wp-block-embed h1 img, #header.nav-down .wp-block-cover h1 img, #header.nav-down .wp-block-gallery h1 img, #header.nav-down .wp-caption-text h1 img, #header.nav-down figcaption h1 img, #header.nav-down .page-links h1 img {
-          max-height: 24px; }
+          max-height: 1rem; }
         .search-form-open #header.nav-up, .search-form-open #header.nav-down {
           transform: none !important; }
           .search-form-open #header.nav-up #search-form, .search-form-open #header.nav-down #search-form {
@@ -829,9 +831,9 @@ body {
 main {
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 48px 0;
+  padding: 56px 0;
   width: 100%;
-  max-width: calc(100vw - 48px);
+  max-width: calc(100vw - 56px);
   flex: 1 0 auto; }
   main p,
   main ul,
@@ -845,9 +847,9 @@ main {
   main dl,
   main address {
     margin-top: 0;
-    margin-bottom: 24px; }
+    margin-bottom: 28px; }
   main figure {
-    margin-bottom: 24px; }
+    margin-bottom: 28px; }
   main ol li,
   main ul li {
     margin-bottom: 0.5rem; }
@@ -860,11 +862,33 @@ main {
     main ul li ol {
       margin: 0; }
   main blockquote {
-    border: 1px #5f27cd solid;
-    color: #777084;
-    padding: 24px; }
-    main blockquote p:last-child {
-      margin-bottom: 0; }
+    max-width: 540px !important;
+    color: #371777;
+    padding: 28px !important;
+    border: 1px #371777 double; }
+    main blockquote p {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      font-weight: 500; }
+      main blockquote p:last-child {
+        margin-bottom: 0; }
+    main blockquote cite {
+      display: block;
+      text-align: right;
+      font-style: normal;
+      color: inherit !important;
+      opacity: 0.6; }
+      main blockquote cite a {
+        color: inherit; }
+    main blockquote.is-style-large {
+      padding: 28px !important; }
+      main blockquote.is-style-large p {
+        font-family: "Playfair Display", serif;
+        font-weight: 600;
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important; }
+      main blockquote.is-style-large cite {
+        font-size: 0.75rem !important; }
   main table {
     width: 100%;
     border-collapse: collapse; }
@@ -906,7 +930,7 @@ main {
   main hr {
     position: relative;
     padding: 0;
-    margin: 48px auto;
+    margin: 56px auto;
     border: none;
     border: rgba(95, 39, 205, 0.25) solid;
     border-width: 1px 0;
@@ -927,7 +951,7 @@ main {
       content: "\00A7";
       background: #fff;
       padding: 0.25rem; }
-  main .caption, main article.full .entry-header .wrap .taxonomy li a, article.full .entry-header .wrap .taxonomy li main a, article.full .entry-header main p .taxonomy li a, main article.full .entry-header p .taxonomy li a, article.full .entry-header main ul .taxonomy li a, main article.full .entry-header ul .taxonomy li a, article.full .entry-header main ol .taxonomy li a, main article.full .entry-header ol .taxonomy li a, article.full .entry-header main blockquote .taxonomy li a, main article.full .entry-header blockquote .taxonomy li a, article.full .entry-header main pre .taxonomy li a, main article.full .entry-header pre .taxonomy li a, article.full .entry-header main embed .taxonomy li a, main article.full .entry-header embed .taxonomy li a, article.full .entry-header main iframe .taxonomy li a, main article.full .entry-header iframe .taxonomy li a, article.full .entry-header main object .taxonomy li a, main article.full .entry-header object .taxonomy li a, article.full .entry-header main table .taxonomy li a, main article.full .entry-header table .taxonomy li a, article.full .entry-header main dl .taxonomy li a, main article.full .entry-header dl .taxonomy li a, article.full .entry-header main address .taxonomy li a, main article.full .entry-header address .taxonomy li a, article.full .entry-header main h1 .taxonomy li a, main article.full .entry-header h1 .taxonomy li a, article.full .entry-header main h2 .taxonomy li a, main article.full .entry-header h2 .taxonomy li a, article.full .entry-header main h3 .taxonomy li a, main article.full .entry-header h3 .taxonomy li a, article.full .entry-header main h4 .taxonomy li a, main article.full .entry-header h4 .taxonomy li a, article.full .entry-header main h5 .taxonomy li a, main article.full .entry-header h5 .taxonomy li a, article.full .entry-header main h6 .taxonomy li a, main article.full .entry-header h6 .taxonomy li a, article.full .entry-header main figure .taxonomy li a, main article.full .entry-header figure .taxonomy li a, main article.full .entry-header .entry-content .taxonomy li a, article.full .entry-header .entry-content .taxonomy li main a, main article.full .entry-header .entry-footer .taxonomy li a, article.full .entry-header .entry-footer .taxonomy li main a, main article.full .entry-header #comments .comments-title .taxonomy li a, article.full .entry-header #comments .comments-title .taxonomy li main a, main #comments article.full .entry-header .comments-title .taxonomy li a, #comments article.full .entry-header .comments-title .taxonomy li main a, main article.full .entry-header .posts-navigation .taxonomy li a, article.full .entry-header .posts-navigation .taxonomy li main a, main article.full .entry-header .wp-block-button .taxonomy li a, article.full .entry-header .wp-block-button .taxonomy li main a, main article.full .entry-header .wp-block-quote .taxonomy li a, article.full .entry-header .wp-block-quote .taxonomy li main a, main article.full .entry-header .twitter-tweet .taxonomy li a, article.full .entry-header .twitter-tweet .taxonomy li main a, main article.full .entry-header .wp-block-embed .taxonomy li a, article.full .entry-header .wp-block-embed .taxonomy li main a, main article.full .entry-header .wp-block-cover .taxonomy li a, article.full .entry-header .wp-block-cover .taxonomy li main a, main article.full .entry-header .wp-block-gallery .taxonomy li a, article.full .entry-header .wp-block-gallery .taxonomy li main a, main article.full .entry-header .wp-caption-text .taxonomy li a, article.full .entry-header .wp-caption-text .taxonomy li main a, main article.full .entry-header figcaption .taxonomy li a, article.full .entry-header figcaption .taxonomy li main a, main article.full .entry-header .page-links .taxonomy li a, article.full .entry-header .page-links .taxonomy li main a, main article.card a footer, article.card a main footer, main #comments .comment-list article .comment-meta .comment-metadata, #comments .comment-list article .comment-meta main .comment-metadata, main .wp-caption-text,
+  main .caption, main blockquote cite, main article.full .entry-header .wrap .taxonomy li a, article.full .entry-header .wrap .taxonomy li main a, article.full .entry-header main p .taxonomy li a, main article.full .entry-header p .taxonomy li a, article.full .entry-header main ul .taxonomy li a, main article.full .entry-header ul .taxonomy li a, article.full .entry-header main ol .taxonomy li a, main article.full .entry-header ol .taxonomy li a, article.full .entry-header main blockquote .taxonomy li a, main article.full .entry-header blockquote .taxonomy li a, article.full .entry-header main pre .taxonomy li a, main article.full .entry-header pre .taxonomy li a, article.full .entry-header main embed .taxonomy li a, main article.full .entry-header embed .taxonomy li a, article.full .entry-header main iframe .taxonomy li a, main article.full .entry-header iframe .taxonomy li a, article.full .entry-header main object .taxonomy li a, main article.full .entry-header object .taxonomy li a, article.full .entry-header main table .taxonomy li a, main article.full .entry-header table .taxonomy li a, article.full .entry-header main dl .taxonomy li a, main article.full .entry-header dl .taxonomy li a, article.full .entry-header main address .taxonomy li a, main article.full .entry-header address .taxonomy li a, article.full .entry-header main h1 .taxonomy li a, main article.full .entry-header h1 .taxonomy li a, article.full .entry-header main h2 .taxonomy li a, main article.full .entry-header h2 .taxonomy li a, article.full .entry-header main h3 .taxonomy li a, main article.full .entry-header h3 .taxonomy li a, article.full .entry-header main h4 .taxonomy li a, main article.full .entry-header h4 .taxonomy li a, article.full .entry-header main h5 .taxonomy li a, main article.full .entry-header h5 .taxonomy li a, article.full .entry-header main h6 .taxonomy li a, main article.full .entry-header h6 .taxonomy li a, article.full .entry-header main figure .taxonomy li a, main article.full .entry-header figure .taxonomy li a, main article.full .entry-header .entry-content .taxonomy li a, article.full .entry-header .entry-content .taxonomy li main a, main article.full .entry-header .entry-footer .taxonomy li a, article.full .entry-header .entry-footer .taxonomy li main a, main article.full .entry-header #comments .comments-title .taxonomy li a, article.full .entry-header #comments .comments-title .taxonomy li main a, main #comments article.full .entry-header .comments-title .taxonomy li a, #comments article.full .entry-header .comments-title .taxonomy li main a, main article.full .entry-header .posts-navigation .taxonomy li a, article.full .entry-header .posts-navigation .taxonomy li main a, main article.full .entry-header .wp-block-button .taxonomy li a, article.full .entry-header .wp-block-button .taxonomy li main a, main article.full .entry-header .wp-block-quote .taxonomy li a, article.full .entry-header .wp-block-quote .taxonomy li main a, main article.full .entry-header .twitter-tweet .taxonomy li a, article.full .entry-header .twitter-tweet .taxonomy li main a, main article.full .entry-header .wp-block-embed .taxonomy li a, article.full .entry-header .wp-block-embed .taxonomy li main a, main article.full .entry-header .wp-block-cover .taxonomy li a, article.full .entry-header .wp-block-cover .taxonomy li main a, main article.full .entry-header .wp-block-gallery .taxonomy li a, article.full .entry-header .wp-block-gallery .taxonomy li main a, main article.full .entry-header .wp-caption-text .taxonomy li a, article.full .entry-header .wp-caption-text .taxonomy li main a, main article.full .entry-header figcaption .taxonomy li a, article.full .entry-header figcaption .taxonomy li main a, main article.full .entry-header .page-links .taxonomy li a, article.full .entry-header .page-links .taxonomy li main a, main article.card a footer, article.card a main footer, main #comments .comment-list article .comment-meta .comment-metadata, #comments .comment-list article .comment-meta main .comment-metadata, main .wp-caption-text,
   main figcaption {
     font-size: 0.75rem;
     line-height: 1;
@@ -936,7 +960,7 @@ main {
 
 #sidebar {
   background: #dedae6;
-  padding: 48px 24px;
+  padding: 56px 28px;
   flex-shrink: 0; }
   #sidebar .wrap, #sidebar main p, main #sidebar p,
   #sidebar main ul, main #sidebar ul,
@@ -958,7 +982,7 @@ main {
   #sidebar .wp-block-embed, #sidebar .wp-block-cover, #sidebar .wp-block-gallery, #sidebar .wp-caption-text,
   #sidebar figcaption, #sidebar .page-links {
     display: grid;
-    gap: 48px; }
+    gap: 56px; }
     #sidebar .wrap.cols2, #sidebar main p.cols2, main #sidebar p.cols2,
     #sidebar main ul.cols2, main #sidebar ul.cols2,
     #sidebar main ol.cols2, main #sidebar ol.cols2,
@@ -1377,7 +1401,7 @@ article {
   article .post-thumbnail {
     display: block;
     padding: 0;
-    margin: 0 auto 24px auto; }
+    margin: 0 auto 28px auto; }
     article .post-thumbnail img {
       display: block;
       width: 100%;
@@ -1399,8 +1423,8 @@ article {
   article.full .entry-header {
     box-sizing: border-box;
     background: rgba(95, 39, 205, 0.1);
-    margin: -48px -24px 48px -24px;
-    padding: 48px 24px;
+    margin: -56px -28px 56px -28px;
+    padding: 56px 28px;
     width: 100vw; }
     article.full .entry-header .wrap, article.full .entry-header main p, main article.full .entry-header p,
     article.full .entry-header main ul, main article.full .entry-header ul,
@@ -1449,7 +1473,7 @@ article {
         justify-content: center;
         align-items: center;
         font-size: 0.8rem;
-        margin: 24px 0 0 0; }
+        margin: 28px 0 0 0; }
         article.full .entry-header .wrap .entry-meta .avatar, article.full .entry-header main p .entry-meta .avatar, main article.full .entry-header p .entry-meta .avatar, article.full .entry-header main ul .entry-meta .avatar, main article.full .entry-header ul .entry-meta .avatar, article.full .entry-header main ol .entry-meta .avatar, main article.full .entry-header ol .entry-meta .avatar, article.full .entry-header main blockquote .entry-meta .avatar, main article.full .entry-header blockquote .entry-meta .avatar, article.full .entry-header main pre .entry-meta .avatar, main article.full .entry-header pre .entry-meta .avatar, article.full .entry-header main embed .entry-meta .avatar, main article.full .entry-header embed .entry-meta .avatar, article.full .entry-header main iframe .entry-meta .avatar, main article.full .entry-header iframe .entry-meta .avatar, article.full .entry-header main object .entry-meta .avatar, main article.full .entry-header object .entry-meta .avatar, article.full .entry-header main table .entry-meta .avatar, main article.full .entry-header table .entry-meta .avatar, article.full .entry-header main dl .entry-meta .avatar, main article.full .entry-header dl .entry-meta .avatar, article.full .entry-header main address .entry-meta .avatar, main article.full .entry-header address .entry-meta .avatar, article.full .entry-header main h1 .entry-meta .avatar, main article.full .entry-header h1 .entry-meta .avatar, article.full .entry-header main h2 .entry-meta .avatar, main article.full .entry-header h2 .entry-meta .avatar, article.full .entry-header main h3 .entry-meta .avatar, main article.full .entry-header h3 .entry-meta .avatar, article.full .entry-header main h4 .entry-meta .avatar, main article.full .entry-header h4 .entry-meta .avatar, article.full .entry-header main h5 .entry-meta .avatar, main article.full .entry-header h5 .entry-meta .avatar, article.full .entry-header main h6 .entry-meta .avatar, main article.full .entry-header h6 .entry-meta .avatar, article.full .entry-header main figure .entry-meta .avatar, main article.full .entry-header figure .entry-meta .avatar, article.full .entry-header .entry-content .entry-meta .avatar, article.full .entry-header .entry-footer .entry-meta .avatar, article.full .entry-header #comments .comments-title .entry-meta .avatar, #comments article.full .entry-header .comments-title .entry-meta .avatar, article.full .entry-header .posts-navigation .entry-meta .avatar, article.full .entry-header .wp-block-button .entry-meta .avatar, article.full .entry-header .wp-block-quote .entry-meta .avatar, article.full .entry-header .twitter-tweet .entry-meta .avatar, article.full .entry-header .wp-block-embed .entry-meta .avatar, article.full .entry-header .wp-block-cover .entry-meta .avatar, article.full .entry-header .wp-block-gallery .entry-meta .avatar, article.full .entry-header .wp-caption-text .entry-meta .avatar, article.full .entry-header figcaption .entry-meta .avatar, article.full .entry-header .page-links .entry-meta .avatar {
           width: 2rem;
           height: 2rem;
@@ -1466,7 +1490,7 @@ article {
               flex-basis: 100%; } }
   @media (max-width: 26.24em) {
     article.full.has-post-thumbnail .post-thumbnail {
-      margin: -48px -24px 24px -24px;
+      margin: -56px -28px 28px -28px;
       overflow: hidden; } }
   article.card {
     display: flex;
@@ -1476,14 +1500,14 @@ article {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding: 24px;
+      padding: 28px;
       color: rgba(0, 0, 0, 0.8);
       background: #fff;
       border-radius: 1rem;
       box-shadow: 0 0 0 1px rgba(204, 204, 204, 0.8);
       text-decoration: none; }
       article.card a .post-thumbnail {
-        margin: -24px -24px 24px -24px;
+        margin: -28px -28px 28px -28px;
         border-radius: 1rem 1rem 0 0;
         overflow: hidden; }
       article.card a header {
@@ -1512,8 +1536,8 @@ article {
         article.card a:hover header h1, article.card a:focus header h1, article.card a:active header h1 {
           color: #5f27cd; }
     article.card.has-post-thumbnail .post-thumbnail {
-      margin: -24px -24px 24px -24px;
-      max-width: calc(100% + 48px); }
+      margin: -28px -28px 28px -28px;
+      max-width: calc(100% + 56px); }
     article.card.sticky {
       box-shadow: 0 0 0 1px rgba(95, 39, 205, 0.5); }
       article.card.sticky a {
@@ -1527,12 +1551,12 @@ article {
           border-color: rgba(95, 39, 205, 0.5); }
 
 #comments {
-  margin: 48px -24px -48px -24px;
-  padding: 48px 24px;
+  margin: 56px -28px -56px -28px;
+  padding: 56px 28px;
   background: rgba(95, 39, 205, 0.1); }
   #comments .comments-title {
     text-align: center;
-    margin-bottom: 48px; }
+    margin-bottom: 56px; }
   #comments .comment-reply-title {
     text-align: center; }
     #comments .comment-reply-title small {
@@ -1540,10 +1564,10 @@ article {
   #comments .comment-list {
     list-style: none;
     padding: 0;
-    margin-bottom: 48px; }
+    margin-bottom: 56px; }
     #comments .comment-list > li {
       padding: 0;
-      margin-bottom: 24px; }
+      margin-bottom: 28px; }
       #comments .comment-list > li ul,
       #comments .comment-list > li ol {
         margin: 0; }
@@ -1557,7 +1581,7 @@ article {
       padding: 1rem;
       margin: 0 0 0.5rem 0; }
       #comments .comment-list article .comment-meta {
-        margin: 0 0 24px 0; }
+        margin: 0 0 28px 0; }
         #comments .comment-list article .comment-meta .comment-author {
           display: flex;
           align-items: center; }
@@ -1593,7 +1617,9 @@ article {
     text-align: center; }
   #comments #commentform label {
     font-size: 0.9rem;
-    font-weight: bold; }
+    font-weight: 500; }
+  #comments #commentform .comment-form-cookies-consent label {
+    font-weight: normal; }
   #comments #commentform input[type="text"],
   #comments #commentform input[type="email"],
   #comments #commentform input[type="url"],
@@ -1608,8 +1634,8 @@ article {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-flow: row dense;
-  gap: 24px;
-  margin: 0 auto 24px auto;
+  gap: 28px;
+  margin: 0 auto 28px auto;
   max-width: 1080px; }
   .grid .has-post-thumbnail {
     grid-row: span 2; }
@@ -1632,14 +1658,14 @@ article {
   .no-results h1 {
     font-weight: 300; }
   .no-results .page-content {
-    margin: 24px auto 48px auto;
+    margin: 28px auto 56px auto;
     font-size: 1.5rem;
     font-weight: 300; }
   .no-results footer p {
     margin-bottom: 0; }
 
 .posts-navigation {
-  margin-top: 48px; }
+  margin-top: 56px; }
   .posts-navigation .nav-links {
     display: flex;
     justify-content: space-between; }
@@ -1653,13 +1679,13 @@ article {
 @media (min-width: 46.25em) {
   #primary-menu {
     flex: 0 0 100%;
-    margin: 24px 0 0 0;
-    padding: 24px 0 0 0;
+    margin: 28px 0 0 0;
+    padding: 28px 0 0 0;
     border-top: 1px rgba(255, 255, 255, 0.2) solid; }
     #primary-menu .menu-items {
       display: flex;
       align-items: center;
-      margin: -24px -1rem; }
+      margin: -28px -1rem; }
       #primary-menu .menu-items li {
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         position: relative; }
@@ -1760,7 +1786,7 @@ article {
         border: none; }
     #primary-menu .menu-items li a {
       display: block;
-      padding: 24px;
+      padding: 28px;
       font-weight: 500;
       text-decoration: none;
       color: rgba(0, 0, 0, 0.8); }
@@ -1772,7 +1798,7 @@ article {
       margin: -0.5rem 0 0.5rem 0; }
       #primary-menu .menu-items li.menu-item-has-children ul li a {
         opacity: 0.6;
-        padding: 1rem 24px; } }
+        padding: 1rem 28px; } }
 
 #search-form form {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1819,7 +1845,7 @@ article {
 
 @media (max-width: 46.24em) {
   #search-form {
-    padding: 0 24px; } }
+    padding: 0 28px; } }
 
 @media (max-width: 26.24em) {
   #search-form {
@@ -1830,7 +1856,7 @@ article {
     display: flex;
     align-items: center;
     max-width: 100vw !important;
-    height: 72px;
+    height: 84px;
     background: #2d1362; }
     #search-form form {
       width: 100%; }
@@ -1841,11 +1867,11 @@ article {
 
 .wp-block-button,
 .wp-block-quote {
-  margin: 0 auto 24px auto !important; }
+  margin: 0 auto 28px auto !important; }
 
 .twitter-tweet,
 .wp-block-embed {
-  margin: 0 auto 24px auto !important; }
+  margin: 0 auto 28px auto !important; }
   .twitter-tweet .wp-block-embed__wrapper,
   .wp-block-embed .wp-block-embed__wrapper {
     display: flex;
@@ -1858,44 +1884,67 @@ article {
   max-width: 1080px;
   height: auto; }
 
-.alignleft {
+.alignleft, .wp-block-media-text .alignleft,
+.wp-block-image .alignleft {
   float: left;
-  margin-bottom: 24px;
-  margin-right: 24px; }
+  margin-bottom: 28px;
+  margin-right: 56px; }
+  @media (max-width: 26.24em) {
+    .alignleft, .wp-block-media-text .alignleft,
+    .wp-block-image .alignleft {
+      float: none;
+      margin: 0 auto 28px auto; } }
 
-.alignright {
+.alignright, .wp-block-media-text .alignright,
+.wp-block-image .alignright {
   float: right;
-  margin-bottom: 24px;
-  margin-left: 24px; }
+  margin-bottom: 28px;
+  margin-left: 56px; }
+  @media (max-width: 26.24em) {
+    .alignright, .wp-block-media-text .alignright,
+    .wp-block-image .alignright {
+      float: none;
+      margin: 0 auto 28px auto; } }
 
-.aligncenter {
+.aligncenter, .wp-block-media-text .aligncenter,
+.wp-block-image .aligncenter {
   clear: both;
   display: block;
   margin-right: auto;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   margin-left: auto; }
 
 .wp-block-media-text,
 .wp-block-image {
   text-align: center;
-  margin-bottom: 24px; }
+  margin-bottom: 28px; }
+  .wp-block-media-text .aligncenter figcaption,
+  .wp-block-image .aligncenter figcaption {
+    display: block !important; }
 
 .wp-block-cover {
-  margin-bottom: 24px; }
+  margin-bottom: 28px; }
   .wp-block-cover .wp-block-cover-image-text,
   .wp-block-cover .wp-block-cover-text,
   .wp-block-cover a {
     color: #fff; }
+  .wp-block-cover blockquote {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.4); }
+    .wp-block-cover blockquote cite {
+      color: #fff; }
+  .wp-block-cover .wp-block-cover__inner-container p:last-child {
+    margin-bottom: 0; }
   .wp-block-cover .has-large-font-size {
     line-height: 1.2; }
   @media (max-width: 26.24em) {
     .wp-block-cover.aligncenter, .wp-block-cover.alignwide, .wp-block-cover.alignfull {
       width: 100vw;
-      margin-right: -24px !important;
-      margin-left: -24px !important; } }
+      margin-right: -28px !important;
+      margin-left: -28px !important; } }
 
 .wp-block-gallery {
-  margin-bottom: 24px; }
+  margin-bottom: 28px; }
   .wp-block-gallery ul {
     max-width: 100%; }
     .wp-block-gallery ul li {
@@ -1907,7 +1956,7 @@ figcaption {
 
 .page-links {
   text-align: center;
-  margin-top: 48px;
+  margin-top: 56px;
   padding-top: 1rem;
   border-top: 1px rgba(95, 39, 205, 0.25) solid; }
   .page-links .post-page-numbers.current {
