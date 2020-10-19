@@ -121,10 +121,12 @@ article {
       }
     }
 
-    &.has-post-thumbnail {
-      @include mq($until: mobile) {
-        .post-thumbnail {
-          margin: (-$space-2) (-$space) $space (-$space);
+    @include mq($until: mobile) {
+      figure {
+        &.post-thumbnail,
+        &.aligncenter.size-full,
+        &.aligncenter.size-large {
+          margin: 0 (-$space) $space (-$space);
           overflow: hidden;
         }
       }
