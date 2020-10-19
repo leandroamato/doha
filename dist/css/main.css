@@ -1869,6 +1869,14 @@ article {
 .wp-block-quote {
   margin: 0 auto 28px auto !important; }
 
+.has-drop-cap:not(:focus)::first-letter {
+  font-size: calc(1.875rem + 7.5vw);
+  font-family: "Playfair Display", serif;
+  font-weight: 600; }
+  @media (min-width: 1200px) {
+    .has-drop-cap:not(:focus)::first-letter {
+      font-size: 7.5rem; } }
+
 .twitter-tweet,
 .wp-block-embed {
   margin: 0 auto 28px auto !important; }

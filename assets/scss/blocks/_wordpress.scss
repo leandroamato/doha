@@ -6,6 +6,17 @@
   margin: 0 auto $space auto !important;
 }
 
+// Drop caps
+.has-drop-cap {
+  &:not(:focus) {
+    &::first-letter {
+      @include font-size(7.5rem);
+      font-family: $font-title;
+      font-weight: 600;
+    }
+  }
+}
+
 // Embeds
 .twitter-tweet,
 .wp-block-embed {
