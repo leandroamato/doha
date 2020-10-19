@@ -1674,14 +1674,22 @@ article {
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         position: relative; }
         #primary-menu .menu-items li a {
+          position: relative;
           display: block;
           text-decoration: none;
           font-weight: 500;
           padding: 1rem;
           color: #d9cbf5; }
-        #primary-menu .menu-items li.current_page_item > a {
-          color: #fff;
-          box-shadow: 0 -1px 0 0 #fff; } }
+        #primary-menu .menu-items li.current_page_item > a, #primary-menu .menu-items li.current-menu-item > a {
+          color: #fff; }
+          #primary-menu .menu-items li.current_page_item > a::before, #primary-menu .menu-items li.current-menu-item > a::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 1rem;
+            left: 1rem;
+            height: 1px;
+            background: #fff; } }
       @media (min-width: 46.25em) and (min-width: 46.25em) {
         #primary-menu .menu-items li.menu-item-has-children > a {
           display: flex;
@@ -1713,8 +1721,8 @@ article {
             padding: 0; }
             #primary-menu .menu-items li.menu-item-has-children ul li a {
               font-weight: normal; }
-            #primary-menu .menu-items li.menu-item-has-children ul li.current_page_item > a {
-              box-shadow: none; }
+            #primary-menu .menu-items li.menu-item-has-children ul li.current_page_item > a::before, #primary-menu .menu-items li.menu-item-has-children ul li.current-menu-item > a::before {
+              display: none; }
             #primary-menu .menu-items li.menu-item-has-children ul li.menu-item-has-children > a::after {
               content: "\f054"; }
             #primary-menu .menu-items li.menu-item-has-children ul li.menu-item-has-children ul {
@@ -1769,6 +1777,7 @@ article {
       #primary-menu .menu-items > li:last-child {
         border: none; }
     #primary-menu .menu-items li a {
+      position: relative;
       display: block;
       padding: 28px;
       font-weight: 500;
@@ -1777,6 +1786,16 @@ article {
       #primary-menu .menu-items li a:active {
         color: #5f27cd;
         background: rgba(95, 39, 205, 0.1); }
+    #primary-menu .menu-items li.current_page_item > a, #primary-menu .menu-items li.current-menu-item > a {
+      color: #5f27cd; }
+      #primary-menu .menu-items li.current_page_item > a::before, #primary-menu .menu-items li.current-menu-item > a::before {
+        content: "";
+        position: absolute;
+        top: 1rem;
+        bottom: 1rem;
+        left: 0;
+        width: 2px;
+        background: #5f27cd; }
     #primary-menu .menu-items li.menu-item-has-children ul {
       font-size: 0.9em;
       margin: -0.5rem 0 0.5rem 0; }
