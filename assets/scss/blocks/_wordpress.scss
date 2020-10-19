@@ -18,7 +18,6 @@
 }
 
 // Embeds
-.twitter-tweet,
 .wp-block-embed {
   @extend .wrap;
   margin: 0 auto $space auto !important;
@@ -32,6 +31,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    .twitter-tweet {
+      margin: 0;
+    }
+
+    .fb_iframe_widget {
+      @include mq($until: mobile) {
+        display: block;
+        overflow: hidden;
+      }
+    }
   }
 }
 
@@ -157,6 +167,12 @@
     li {
       overflow: hidden;
     }
+  }
+
+  figcaption {
+    display: block !important;
+    text-align: center;
+    width: 100%;
   }
 }
 
