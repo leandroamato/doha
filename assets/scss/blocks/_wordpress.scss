@@ -172,17 +172,34 @@ figcaption {
 .page-links {
   @extend .wrap;
   @extend .text-width;
-  text-align: center;
-  margin-top: $space-2;
-  padding-top: 1rem;
-  border-top: 1px fade-out($color-theme, 0.75) solid;
+  @extend .caption;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px lighten($color-text, 85%) solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+
+  &.top {
+    margin-bottom: $space-2;
+  }
+
+  &.bottom {
+    margin-top: $space-2;
+  }
+
+  .label {
+    margin-right: auto;
+  }
 
   .post-page-numbers {
     @extend .btn;
+    margin-left: 0.25rem;
 
     &.current {
       pointer-events: none;
-      background: fade-out($color-theme, 0.75) !important;
+      background: lighten($color-text, 90%);
+      color: $color-text;
     }
   }
 }
