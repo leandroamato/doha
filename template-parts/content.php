@@ -40,6 +40,13 @@
   <div class="entry-content">
 
     <?php
+    wp_link_pages(
+      array(
+        'before' => '<div class="page-links top"><span class="label">' . __('Pages', 'doha') . '</span>',
+        'after'  => '</div>',
+      )
+    );
+
     the_content(
       sprintf(
         wp_kses(
@@ -57,7 +64,7 @@
 
     wp_link_pages(
       array(
-        'before' => '<div class="page-links">' . __('Pages', 'doha'),
+        'before' => '<div class="page-links bottom"><span class="label">' . __('Pages', 'doha') . '</span>',
         'after'  => '</div>',
       )
     );

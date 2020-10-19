@@ -952,7 +952,7 @@ main {
       background: #fff;
       padding: 0.25rem; }
   main .caption, main blockquote cite, main article.full .entry-header .wrap .taxonomy li a, article.full .entry-header .wrap .taxonomy li main a, article.full .entry-header main p .taxonomy li a, main article.full .entry-header p .taxonomy li a, article.full .entry-header main ul .taxonomy li a, main article.full .entry-header ul .taxonomy li a, article.full .entry-header main ol .taxonomy li a, main article.full .entry-header ol .taxonomy li a, article.full .entry-header main blockquote .taxonomy li a, main article.full .entry-header blockquote .taxonomy li a, article.full .entry-header main pre .taxonomy li a, main article.full .entry-header pre .taxonomy li a, article.full .entry-header main embed .taxonomy li a, main article.full .entry-header embed .taxonomy li a, article.full .entry-header main iframe .taxonomy li a, main article.full .entry-header iframe .taxonomy li a, article.full .entry-header main object .taxonomy li a, main article.full .entry-header object .taxonomy li a, article.full .entry-header main table .taxonomy li a, main article.full .entry-header table .taxonomy li a, article.full .entry-header main dl .taxonomy li a, main article.full .entry-header dl .taxonomy li a, article.full .entry-header main address .taxonomy li a, main article.full .entry-header address .taxonomy li a, article.full .entry-header main h1 .taxonomy li a, main article.full .entry-header h1 .taxonomy li a, article.full .entry-header main h2 .taxonomy li a, main article.full .entry-header h2 .taxonomy li a, article.full .entry-header main h3 .taxonomy li a, main article.full .entry-header h3 .taxonomy li a, article.full .entry-header main h4 .taxonomy li a, main article.full .entry-header h4 .taxonomy li a, article.full .entry-header main h5 .taxonomy li a, main article.full .entry-header h5 .taxonomy li a, article.full .entry-header main h6 .taxonomy li a, main article.full .entry-header h6 .taxonomy li a, article.full .entry-header main figure .taxonomy li a, main article.full .entry-header figure .taxonomy li a, main article.full .entry-header .entry-content .taxonomy li a, article.full .entry-header .entry-content .taxonomy li main a, main article.full .entry-header .entry-footer .taxonomy li a, article.full .entry-header .entry-footer .taxonomy li main a, main article.full .entry-header #comments .comments-title .taxonomy li a, article.full .entry-header #comments .comments-title .taxonomy li main a, main #comments article.full .entry-header .comments-title .taxonomy li a, #comments article.full .entry-header .comments-title .taxonomy li main a, main article.full .entry-header .posts-navigation .taxonomy li a, article.full .entry-header .posts-navigation .taxonomy li main a, main article.full .entry-header .wp-block-button .taxonomy li a, article.full .entry-header .wp-block-button .taxonomy li main a, main article.full .entry-header .wp-block-quote .taxonomy li a, article.full .entry-header .wp-block-quote .taxonomy li main a, main article.full .entry-header .twitter-tweet .taxonomy li a, article.full .entry-header .twitter-tweet .taxonomy li main a, main article.full .entry-header .wp-block-embed .taxonomy li a, article.full .entry-header .wp-block-embed .taxonomy li main a, main article.full .entry-header .wp-block-cover .taxonomy li a, article.full .entry-header .wp-block-cover .taxonomy li main a, main article.full .entry-header .wp-block-gallery .taxonomy li a, article.full .entry-header .wp-block-gallery .taxonomy li main a, main article.full .entry-header .wp-caption-text .taxonomy li a, article.full .entry-header .wp-caption-text .taxonomy li main a, main article.full .entry-header figcaption .taxonomy li a, article.full .entry-header figcaption .taxonomy li main a, main article.full .entry-header .page-links .taxonomy li a, article.full .entry-header .page-links .taxonomy li main a, main article.card a footer, article.card a main footer, main #comments .comment-list article .comment-meta .comment-metadata, #comments .comment-list article .comment-meta main .comment-metadata, main .wp-caption-text,
-  main figcaption {
+  main figcaption, main .page-links {
     font-size: 0.75rem;
     line-height: 1;
     text-transform: uppercase;
@@ -1869,6 +1869,14 @@ article {
 .wp-block-quote {
   margin: 0 auto 28px auto !important; }
 
+.has-drop-cap:not(:focus)::first-letter {
+  font-size: calc(1.875rem + 7.5vw);
+  font-family: "Playfair Display", serif;
+  font-weight: 600; }
+  @media (min-width: 1200px) {
+    .has-drop-cap:not(:focus)::first-letter {
+      font-size: 7.5rem; } }
+
 .twitter-tweet,
 .wp-block-embed {
   margin: 0 auto 28px auto !important; }
@@ -1955,10 +1963,21 @@ figcaption {
   margin: 0; }
 
 .page-links {
-  text-align: center;
-  margin-top: 56px;
-  padding-top: 1rem;
-  border-top: 1px rgba(95, 39, 205, 0.25) solid; }
-  .page-links .post-page-numbers.current {
-    pointer-events: none;
-    background: rgba(95, 39, 205, 0.25) !important; }
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px rgba(217, 217, 217, 0.8) solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem; }
+  .page-links.top {
+    margin-bottom: 56px; }
+  .page-links.bottom {
+    margin-top: 56px; }
+  .page-links .label {
+    margin-right: auto; }
+  .page-links .post-page-numbers {
+    margin-left: 0.25rem; }
+    .page-links .post-page-numbers.current {
+      pointer-events: none;
+      background: rgba(230, 230, 230, 0.8);
+      color: rgba(0, 0, 0, 0.8); }
