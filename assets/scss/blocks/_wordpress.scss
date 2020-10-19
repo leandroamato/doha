@@ -168,6 +168,12 @@
       overflow: hidden;
     }
   }
+
+  figcaption {
+    display: block !important;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 // Captions

@@ -1964,6 +1964,10 @@ article {
     max-width: 100%; }
     .wp-block-gallery ul li {
       overflow: hidden; }
+  .wp-block-gallery figcaption {
+    display: block !important;
+    text-align: center;
+    width: 100%; }
 
 .wp-caption-text,
 figcaption {
