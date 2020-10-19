@@ -35,7 +35,13 @@
 
   </header>
 
-  <?php doha_post_thumbnail(); ?>
+  <?php
+  /**
+   * Optional: Uncomment the function to automatically include the featured image.
+   * Nowadays, it might be better to include a cover/image block only when (and where) needed.
+   */
+  // doha_post_thumbnail();
+  ?>
 
   <div class="entry-content">
 
