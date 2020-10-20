@@ -1496,10 +1496,11 @@ article {
         overflow: hidden; }
       article.card a header {
         margin: 0; }
-        article.card a header h1 {
+        article.card a header h2 {
           font-family: "Playfair Display", serif;
           font-weight: 900;
-          word-break: break-word; }
+          word-break: break-word;
+          margin-top: 0; }
       article.card a .content {
         font-size: 0.9rem;
         flex: 1 0 auto;

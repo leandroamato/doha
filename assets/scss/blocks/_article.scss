@@ -170,10 +170,11 @@ article {
       header {
         margin: 0;
 
-        h1 {
+        h2 {
           font-family: $font-title;
           font-weight: 900;
           word-break: break-word;
+          margin-top: 0;
         }
       }
 

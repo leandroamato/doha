@@ -4,7 +4,7 @@
     <?php doha_post_thumbnail(); ?>
 
     <header class="entry-header">
-      <h1 class="tit4"><?php the_title(); ?></h1>
+      <h2 class="tit4"><?php the_title(); ?></h2>
     </header>
 
     <p class="content">
