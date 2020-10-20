@@ -141,7 +141,7 @@ if (!function_exists('doha_get_search_form')) {
     echo '<form role="search" method="get" action="' . home_url('/') . '" >';
     echo '<label class="screen-reader-text" for="s">' . __('Search', 'doha') . '</label>';
     echo '<input type="search" class="search-field" value="' . get_search_query() . '" name="s" id="s" placeholder="' . __('Search&hellip;', 'doha') . '" />';
-    echo '<button class="search-submit"><span class="screen-reader-text">' . __('Search', 'doha') . '</button>';
+    echo '<button class="search-submit"><span class="screen-reader-text">' . __('Search', 'doha') . '</span></button>';
     echo '</form>';
     echo '</div>';
   }
