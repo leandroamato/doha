@@ -1583,6 +1583,14 @@ article {
           opacity: 0.6; }
           #comments .comment-list article .comment-meta .comment-metadata a {
             text-decoration: none; }
+        #comments .comment-list article .comment-meta .comment-awaiting-moderation {
+          display: block;
+          margin: 1rem 0 0 0;
+          padding: 1rem;
+          font-size: 0.8rem;
+          font-style: normal;
+          color: #5f27cd;
+          border: 1px #5f27cd solid; }
       #comments .comment-list article .reply {
         text-align: right; }
         #comments .comment-list article .reply a {
