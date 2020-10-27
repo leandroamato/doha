@@ -135,6 +135,13 @@ article {
     .entry-content {
       @extend .wrap;
       //overflow: hidden;
+
+      h2,
+      h3,
+      h4,
+      h5 {
+        margin-bottom: $space;
+      }
     }
 
     .entry-footer {

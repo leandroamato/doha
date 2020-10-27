@@ -1484,6 +1484,11 @@ article {
     article.full figure.post-thumbnail, article.full figure.aligncenter.size-full, article.full figure.aligncenter.size-large {
       margin: 0 -28px 28px -28px;
       overflow: hidden; } }
+  article.full .entry-content h2,
+  article.full .entry-content h3,
+  article.full .entry-content h4,
+  article.full .entry-content h5 {
+    margin-bottom: 28px; }
   article.card {
     display: flex;
     flex-direction: column; }
