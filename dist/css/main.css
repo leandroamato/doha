@@ -2035,6 +2035,8 @@ article {
     display: block !important;
     text-align: center;
     width: 100%; }
+    .wp-block-gallery figcaption a {
+      color: #fff; }
 
 .wp-caption-text,
 figcaption {
