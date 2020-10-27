@@ -488,6 +488,12 @@ h5 {
     .bigger, article.full .entry-header .wrap h1, article.full .entry-header main p h1, main article.full .entry-header p h1, article.full .entry-header main ul h1, main article.full .entry-header ul h1, article.full .entry-header main ol h1, main article.full .entry-header ol h1, article.full .entry-header main blockquote h1, main article.full .entry-header blockquote h1, article.full .entry-header main pre h1, main article.full .entry-header pre h1, article.full .entry-header main embed h1, main article.full .entry-header embed h1, article.full .entry-header main iframe h1, main article.full .entry-header iframe h1, article.full .entry-header main object h1, main article.full .entry-header object h1, article.full .entry-header main table h1, main article.full .entry-header table h1, article.full .entry-header main dl h1, main article.full .entry-header dl h1, article.full .entry-header main address h1, main article.full .entry-header address h1, article.full .entry-header main h1 h1, main article.full .entry-header h1 h1, article.full .entry-header main h2 h1, main article.full .entry-header h2 h1, article.full .entry-header main h3 h1, main article.full .entry-header h3 h1, article.full .entry-header main h4 h1, main article.full .entry-header h4 h1, article.full .entry-header main h5 h1, main article.full .entry-header h5 h1, article.full .entry-header main h6 h1, main article.full .entry-header h6 h1, article.full .entry-header main figure h1, main article.full .entry-header figure h1, article.full .entry-header .entry-content h1, article.full .entry-header .entry-footer h1, article.full .entry-header #comments .comments-title h1, #comments article.full .entry-header .comments-title h1, article.full .entry-header .posts-navigation h1, article.full .entry-header .wp-block-button h1, article.full .entry-header .wp-block-quote h1, article.full .entry-header .wp-block-embed h1, article.full .entry-header .wp-block-cover h1, article.full .entry-header .wp-block-gallery h1, article.full .entry-header .wp-caption-text h1, article.full .entry-header figcaption h1, article.full .entry-header .page-links h1, #comments .comments-title h2, #comments .comment-reply-title {
       font-size: 4rem; } }
 
+.large-text, main blockquote.is-style-large p, .wp-block-pullquote blockquote p {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 1.5rem !important;
+  line-height: 1.3 !important; }
+
 h1,
 .tit1 {
   margin-top: 0;
@@ -889,11 +895,6 @@ main {
         color: inherit; }
     main blockquote.is-style-large {
       padding: 28px !important; }
-      main blockquote.is-style-large p {
-        font-family: "Playfair Display", serif;
-        font-weight: 600;
-        font-size: 1.5rem !important;
-        line-height: 1.3 !important; }
       main blockquote.is-style-large cite {
         font-size: 0.75rem !important; }
   main table {
@@ -1955,24 +1956,24 @@ article {
   height: auto; }
 
 .alignleft, .wp-block-media-text .alignleft,
-.wp-block-image .alignleft {
+.wp-block-image .alignleft, .wp-block-pullquote.alignleft {
   float: left;
   margin-bottom: 28px;
   margin-right: 56px; }
   @media (max-width: 26.24em) {
     .alignleft, .wp-block-media-text .alignleft,
-    .wp-block-image .alignleft {
+    .wp-block-image .alignleft, .wp-block-pullquote.alignleft {
       float: none;
       margin: 0 auto 28px auto; } }
 
 .alignright, .wp-block-media-text .alignright,
-.wp-block-image .alignright {
+.wp-block-image .alignright, .wp-block-pullquote.alignright {
   float: right;
   margin-bottom: 28px;
   margin-left: 56px; }
   @media (max-width: 26.24em) {
     .alignright, .wp-block-media-text .alignright,
-    .wp-block-image .alignright {
+    .wp-block-image .alignright, .wp-block-pullquote.alignright {
       float: none;
       margin: 0 auto 28px auto; } }
 
@@ -1991,6 +1992,17 @@ article {
   .wp-block-media-text .aligncenter figcaption,
   .wp-block-image .aligncenter figcaption {
     display: block !important; }
+
+.wp-block-pullquote {
+  margin: 0 auto;
+  margin-bottom: 0 !important;
+  padding: 0; }
+  .wp-block-pullquote blockquote {
+    padding: 0 !important;
+    border: none;
+    max-width: 25ch !important; }
+    .wp-block-pullquote blockquote cite {
+      text-align: center; }
 
 .wp-block-cover {
   margin-bottom: 28px; }

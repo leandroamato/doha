@@ -112,6 +112,35 @@
   }
 }
 
+// Pullquotes
+.wp-block-pullquote {
+  margin: 0 auto;
+  margin-bottom: 0 !important;
+  padding: 0;
+
+  blockquote {
+    padding: 0 !important;
+    border: none;
+    max-width: 25ch !important;
+
+    p {
+      @extend .large-text;
+    }
+
+    cite {
+      text-align: center;
+    }
+  }
+
+  &.alignright {
+    @extend .alignright;
+  }
+
+  &.alignleft {
+    @extend .alignleft;
+  }
+}
+
 // Cover
 .wp-block-cover {
   @extend .wrap;
