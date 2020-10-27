@@ -328,7 +328,7 @@ if (!function_exists('doha_posts_navigation')) {
   {
     global $wp_query;
 
-    $big = 9999999999; // Apparently, this only works with an unlikely big integer
+    $big = 999999999; // Apparently, this only works with an unlikely big integer
 
     echo '<nav class="navigation posts-navigation page-numbers-navigation" role="navigation" aria-label="Entradas">';
     echo '<h2 class="screen-reader-text">' . __('Posts navigation') . '</h2>';
