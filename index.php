@@ -32,7 +32,11 @@ if (have_posts()) :
 
   echo '</div>';
 
-  the_posts_navigation();
+  // Wordpress traditional navigation:
+  // the_posts_navigation();
+
+  // Custom navigation with page numbers:
+  doha_posts_navigation();
 
 else :
 

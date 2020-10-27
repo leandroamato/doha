@@ -300,19 +300,48 @@ if (!function_exists('doha_comments_number')) {
  * Get a class for the widget area according to the nunmber of widgets
  */
 
-function doha_widgets_class()
-{
-  $widgets = wp_get_sidebars_widgets();
-  $widgetsNumber = count($widgets['widget-area']);
+if (!function_exists('doha_widgets_class')) {
+  function doha_widgets_class()
+  {
+    $widgets = wp_get_sidebars_widgets();
+    $widgetsNumber = count($widgets['widget-area']);
 
-  // Should we use a 3, 2 or 1 column layout?
-  if ($widgetsNumber % 3 == 0) {
-    $widgetsClass = 'cols3';
-  } else if ($widgetsNumber % 2 == 0) {
-    $widgetsClass = 'cols2';
-  } else {
-    $widgetsClass = ($widgetsNumber > 1) ? 'cols' : 'cols1';
+    // Should we use a 3, 2 or 1 column layout?
+    if ($widgetsNumber % 3 == 0) {
+      $widgetsClass = 'cols3';
+    } else if ($widgetsNumber % 2 == 0) {
+      $widgetsClass = 'cols2';
+    } else {
+      $widgetsClass = ($widgetsNumber > 1) ? 'cols' : 'cols1';
+    }
+
+    echo $widgetsClass;
   }
+}
 
-  echo $widgetsClass;
+/**
+ * Custom pagination
+ */
+
+if (!function_exists('doha_posts_navigation')) {
+  function doha_posts_navigation()
+  {
+    global $wp_query;
+
+    $big = 9999999999; // Apparently, this only works with an unlikely big integer
+
+    echo '<nav class="navigation posts-navigation page-numbers-navigation" role="navigation" aria-label="Entradas">';
+    echo '<h2 class="screen-reader-text">' . __('Posts navigation') . '</h2>';
+
+    echo '<div class="nav-links">';
+    echo paginate_links(array(
+      'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+      'format' => '?paged=%#%',
+      'current' => max(1, get_query_var('paged')),
+      'total' => $wp_query->max_num_pages
+    ));
+    echo '</div>';
+
+    echo '</nav>';
+  }
 }

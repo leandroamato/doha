@@ -6,8 +6,60 @@
     display: flex;
     justify-content: space-between;
 
-    a {
+    a,
+    span {
       @extend .btn;
+    }
+
+    span {
+      pointer-events: none;
+      background: fade-out($color-theme, 0.9);
+      color: $color-theme;
+    }
+  }
+
+  &.page-numbers-navigation {
+    .nav-links {
+      justify-content: center;
+      align-items: center;
+
+      a,
+      span {
+        margin: 0 0.25rem;
+      }
+
+      @include mq($until: mobile) {
+        a,
+        span {
+          width: 1ch;
+          height: 1ch;
+          padding: 1em;
+          overflow: hidden;
+        }
+
+        .prev,
+        .next {
+          white-space: nowrap;
+          color: transparent;
+
+          &::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f060";
+            color: $color-theme-contrast;
+          }
+        }
+
+        .next {
+          &::after {
+            content: "\f061";
+          }
+        }
+      }
     }
   }
 }
