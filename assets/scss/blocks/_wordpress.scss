@@ -203,8 +203,10 @@
     text-align: center;
     width: 100%;
 
-    a {
-      color: #fff;
+    &.blocks-gallery-item__caption {
+      a {
+        color: #fff;
+      }
     }
   }
 }
