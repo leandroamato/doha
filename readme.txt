@@ -1,4 +1,4 @@
-=== Doha Theme ===
+=== Doha ===
 Contributors: leandroamato
 Requires at least: 5.3
 Tested up to: 5.7
