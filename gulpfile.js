@@ -8,6 +8,7 @@ var config = require("./config.json");
  */
 const gulp = require("gulp"),
   browserSync = require("browser-sync").create(),
+  cleanCSS = require("gulp-clean-css"),
   plugins = require("gulp-load-plugins")();
 
 /**
@@ -20,7 +21,7 @@ function styles() {
     .pipe(plugins.sassGlob())
     .pipe(plugins.sass())
     .pipe(gulp.dest("./dist/css"))
-    .pipe(plugins.cssnano(config.optimization.nano))
+    .pipe(cleanCSS(config.optimization.cleanCSS))
     .pipe(plugins.rename({ extname: ".min.css" }))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream());
