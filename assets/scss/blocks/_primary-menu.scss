@@ -56,10 +56,9 @@
               justify-content: space-between;
 
               &::after {
-                transform: scale(0.6);
-                font-family: "Font Awesome 5 Free";
-                font-weight: 900;
-                content: "\f078";
+                //transform: scale(0.6);
+                font-family: "boxicons";
+                content: "\ec89";
                 padding: 0 0 0 0.5rem;
                 opacity: 0.6;
               }
@@ -100,7 +99,7 @@
                 &.menu-item-has-children {
                   > a {
                     &::after {
-                      content: "\f054";
+                      content: "\ec8f";
                     }
                   }
 

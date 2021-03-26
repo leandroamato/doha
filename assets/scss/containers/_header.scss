@@ -39,22 +39,22 @@
       border-radius: 100%;
 
       &::after {
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f002";
+        transform: scale(1.25);
+        font-family: "boxicons";
+        content: "\eb54";
       }
 
       &.active {
         background: fade-out($color-theme-contrast, 0.75);
 
         &::after {
-          content: "\f00d";
+          content: "\ebe9";
         }
       }
 
       &.toggle-menu {
         &::after {
-          content: "\f0c9";
+          content: "\eac2";
         }
 
         // If the body knows that the primary menu is open, use the button as a background layer to close the menu

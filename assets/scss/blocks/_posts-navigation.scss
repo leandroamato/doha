@@ -47,16 +47,15 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            content: "\f060";
+            font-family: "boxicons";
+            content: "\ea95";
             color: $color-theme-contrast;
           }
         }
 
         .next {
           &::after {
-            content: "\f061";
+            content: "\eb43";
           }
         }
       }

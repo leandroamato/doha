@@ -13,7 +13,7 @@
 
     <footer>
       <p class="meta">
-        <?php esc_html_e(get_the_author()); ?> &middot; <?php doha_post_date(); ?>
+        <?php the_author(); ?> &middot; <?php doha_post_date(); ?>
       </p>
       <?php doha_comments_number(); ?>
 

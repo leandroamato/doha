@@ -60,6 +60,15 @@ if (!function_exists('doha_setup')) {
     add_image_size('card', 600, 300, true);
 
     /**
+     * Set the content width in pixels, based on the theme's design and stylesheet.
+     */
+    function custom_theme_content_width()
+    {
+      $GLOBALS['content_width'] = apply_filters('custom_theme_content_width', 1080);
+    }
+    add_action('after_setup_theme', 'custom_theme_content_width', 0);
+
+    /**
      * Responsive embeds
      */
     add_theme_support('responsive-embeds');

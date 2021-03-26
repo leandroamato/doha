@@ -1,7 +1,14 @@
 /*!
-Theme Name: Doha Wordpress Theme
-Theme URI: #
+Theme Name: Doha
+Theme URI: https://doha.localv.ar/
+Author URI: https://leandro.ama.to/
 Author: LDA
-Description: An organized base for custom themes
-Version: 1.0.0
+Description: A "base" theme for Wordpress with most of the common uses already contemplated and a framework to customize everything without starting from scratch.
+Tags: blog, grid-layout,one-column,custom-logo,custom-menu,featured-images,footer-widgets,sticky-post,theme-options,threaded-comments,translation-ready,block-styles,wide-blocks
+Version: 1.0
+Tested up to: 5.7
+Requires PHP: 7.0
+License: GNU GENERAL PUBLIC LICENSE Version 3
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
+Text Domain: doha
 */
