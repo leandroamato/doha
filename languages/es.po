@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Doha\n"
-"POT-Creation-Date: 2020-10-17 20:14-0300\n"
-"PO-Revision-Date: 2020-10-17 20:14-0300\n"
+"POT-Creation-Date: 2021-03-26 16:07-0300\n"
+"PO-Revision-Date: 2021-03-26 16:09-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -16,11 +16,11 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 
-#: comments.php:17 functions/doha.php:287
+#: comments.php:17 functions/doha.php:290
 msgid "comment"
 msgstr "comentario"
 
-#: comments.php:17 functions/doha.php:287
+#: comments.php:17 functions/doha.php:290
 msgid "comments"
 msgstr "comentarios"
 
@@ -44,30 +44,34 @@ msgstr "Buscar"
 msgid "Search&hellip;"
 msgstr "Buscar&hellip;"
 
-#: functions/doha.php:163
+#: functions/doha.php:165
 msgid "Category: "
 msgstr "Categoría: "
 
-#: functions/doha.php:165
+#: functions/doha.php:167
 msgid "Tag: "
 msgstr "Etiqueta: "
 
-#: functions/doha.php:167
+#: functions/doha.php:169
 msgid "Date: "
 msgstr "Fecha: "
 
-#: functions/doha.php:169
+#: functions/doha.php:171
 msgid "Author: "
 msgstr "Autor: "
 
-#: functions/doha.php:225
+#: functions/doha.php:228
 msgid "By"
 msgstr "Por"
 
-#: functions/doha.php:241
+#: functions/doha.php:244
 #, php-format
 msgid "%s ago"
 msgstr "hace %s"
+
+#: functions/doha.php:334
+msgid "Posts navigation"
+msgstr "Navegación de entradas"
 
 #: functions/setup.php:47
 msgid "Primary menu"
@@ -77,11 +81,11 @@ msgstr "Menú principal"
 msgid "Social"
 msgstr "Social"
 
-#: functions/setup.php:92
+#: functions/setup.php:101
 msgid "Widgets"
 msgstr ""
 
-#: functions/setup.php:94
+#: functions/setup.php:103
 msgid "Add widgets here."
 msgstr "Agrega widgets aquí."
 
@@ -113,7 +117,8 @@ msgstr ""
 msgid "Go back home"
 msgstr "Volver al inicio"
 
-#: template-parts/content-page.php:17 template-parts/content.php:60
+#: template-parts/content-page.php:17 template-parts/content.php:51
+#: template-parts/content.php:73
 msgid "Pages"
 msgstr "Páginas"
 
@@ -122,7 +127,7 @@ msgstr "Páginas"
 msgid "Edit<span class=\"screen-reader-text\"> %s</span>"
 msgstr "Editar<span class=“screen-reader-text”> %s</span>"
 
-#: template-parts/content.php:47
+#: template-parts/content.php:60
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Continuar leyendo<span class=“screen-reader-text”> “%s”</span>"

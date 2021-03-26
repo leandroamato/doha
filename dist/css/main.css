@@ -1637,6 +1637,8 @@ article {
             margin-left: 0.25rem; }
       #comments .comment-list article:last-child {
         margin: 0; }
+    #comments .comment-list .bypostauthor article {
+      box-shadow: 0 0 0 0.25rem rgba(95, 39, 205, 0.1); }
     #comments .comment-list .children {
       list-style: none; }
   #comments #commentform .comment-notes {

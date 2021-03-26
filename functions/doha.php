@@ -109,7 +109,7 @@ if (!function_exists('doha_get_menu')) {
 
       // Add button to toggle menu for main menu
       if ($menu == 'primary') {
-        echo '<button class="toggle toggle-menu btn" data-target="primary-menu" aria-controls="primary-menu" aria-expanded="false"><span class="screen-reader-text">' . _x('Menu', 'label') . '</span></button>';
+        echo '<button class="toggle toggle-menu btn" data-target="primary-menu" aria-controls="primary-menu" aria-expanded="false"><span class="screen-reader-text">' . _x('Menu', 'labels', 'doha') . '</span></button>';
       }
 
       // Show the menu
@@ -135,7 +135,7 @@ if (!function_exists('doha_get_search_form')) {
   function doha_get_search_form()
   {
 
-    echo '<button class="toggle toggle-search btn" data-target="search-form" aria-controls="search-form" aria-expanded="false"><span class="screen-reader-text">' . _x('Buscar', 'label') . '</span></button>';
+    echo '<button class="toggle toggle-search btn" data-target="search-form" aria-controls="search-form" aria-expanded="false"><span class="screen-reader-text">' . _x('Search', 'labels',  'doha') . '</span></button>';
 
     echo '<div id="search-form">';
     echo '<form role="search" method="get" action="' . home_url('/') . '" >';
@@ -331,7 +331,7 @@ if (!function_exists('doha_posts_navigation')) {
     $big = 999999999; // Apparently, this only works with an unlikely big integer
 
     echo '<nav class="navigation posts-navigation page-numbers-navigation" role="navigation" aria-label="Entradas">';
-    echo '<h2 class="screen-reader-text">' . __('Posts navigation') . '</h2>';
+    echo '<h2 class="screen-reader-text">' . __('Posts navigation', 'doha') . '</h2>';
 
     echo '<div class="nav-links">';
     echo paginate_links(array(

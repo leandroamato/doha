@@ -19,7 +19,7 @@
 
   <footer>
     <p>
-      <a class="btn" href="<?php echo home_url('/'); ?>"><?php _e('Go back home', 'doha'); ?></a>
+      <a class="btn" href="<?php echo esc_url(home_url('/')); ?>"><?php _e('Go back home', 'doha'); ?></a>
     </p>
   </footer>
 
