@@ -69,7 +69,7 @@ if (!function_exists('doha_get_custom_logo')) {
     if (function_exists('the_custom_logo')) {
       $custom_logo_id = get_theme_mod('custom_logo');
       $custom_logo = wp_get_attachment_image_src($custom_logo_id, 'full');
-      return $custom_logo[0];
+      return ($custom_logo) ? $custom_logo[0] : null;
     } else {
       return null;
     }
