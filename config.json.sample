@@ -1,14 +1,15 @@
 {
-  "site": { "URL": "wordpress.localhost" },
+  "site": { "URL": "https://doha.test" },
   "optimization": {
     "nano": {
-      "preset": "advanced",
-      "discardComments": {
-        "removeAll": true
-      },
-      "autoprefixer": {
-        "browsers": ["last 4 versions"],
-        "add": true
+      "level": {
+        "1": {
+          "all": true,
+          "specialComments": 0
+        },
+        "2": {
+          "mergeSemantically": true
+        }
       }
     },
     "terser": {}

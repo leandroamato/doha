@@ -9,7 +9,8 @@ var config = require("./config.json");
 const gulp = require("gulp"),
   browserSync = require("browser-sync").create(),
   cleanCSS = require("gulp-clean-css"),
-  plugins = require("gulp-load-plugins")();
+  plugins = require("gulp-load-plugins")(),
+  sass = require("gulp-sass")(require("sass"));
 
 /**
  * Process styles
@@ -19,7 +20,8 @@ function styles() {
     .src("./assets/scss/main.scss")
     .pipe(plugins.plumber())
     .pipe(plugins.sassGlob())
-    .pipe(plugins.sass())
+    .pipe(sass())
+    .pipe(plugins.autoprefixer())
     .pipe(gulp.dest("./dist/css"))
     .pipe(cleanCSS(config.optimization.cleanCSS))
     .pipe(plugins.rename({ extname: ".min.css" }))

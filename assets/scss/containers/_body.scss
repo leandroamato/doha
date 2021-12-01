@@ -1,6 +1,8 @@
 // Body
+@use "sass:math";
+
 html {
-  font-size: (($font-size / ($font-size * 0 + 1)) / 16 * 100%);
+  font-size: (math.div(math.div($font-size, $font-size * 0 + 1), 16) * 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
