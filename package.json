@@ -25,7 +25,7 @@
     "gulp-terser": "^2.0.1"
   },
   "dependencies": {
-    "browser-sync": "^2.26.14",
+    "browser-sync": "^2.28.1",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cli": "^2.3.0",
     "rfs": "^9.0.3",
